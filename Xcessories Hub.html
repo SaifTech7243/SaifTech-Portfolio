@@ -1,0 +1,1618 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Xcessories Hub — Premium Cell Phone Accessories · Gulberg, Lahore</title>
+<meta name="description" content="Xcessories Hub — Cell phone accessory store in Gulberg, Lahore. Cases, chargers, earbuds, power banks & more. Rated 4.6 ★ (526 reviews)." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+<style>
+/* ============================================================
+   ROOT / RESET
+   ============================================================ */
+:root{
+  --bg:#06060b;
+  --bg-2:#0b0b14;
+  --surface:rgba(255,255,255,.035);
+  --surface-2:rgba(255,255,255,.06);
+  --line:rgba(255,255,255,.09);
+  --line-2:rgba(255,255,255,.16);
+  --text:#f4f5fa;
+  --muted:#9aa1b8;
+  --muted-2:#6f7690;
+  --brand:#7c3aed;
+  --brand-2:#22d3ee;
+  --brand-3:#3b82f6;
+  --gold:#fbbf24;
+  --green:#22c55e;
+  --radius:20px;
+  --shadow:0 30px 80px -30px rgba(0,0,0,.9);
+  --font-display:'Space Grotesk', 'Inter', sans-serif;
+}
+
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+
+html{scroll-behavior:smooth;}
+
+body{
+  background:var(--bg);
+  color:var(--text);
+  font-family:'Inter',system-ui,-apple-system,'Segoe UI',sans-serif;
+  line-height:1.65;
+  overflow-x:hidden;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+
+img,iframe,canvas,svg{display:block;max-width:100%;}
+a{color:inherit;text-decoration:none;}
+button{font:inherit;color:inherit;background:none;border:none;cursor:pointer;}
+
+::selection{background:var(--brand);color:#fff;}
+
+::-webkit-scrollbar{width:10px;}
+::-webkit-scrollbar-track{background:#08080f;}
+::-webkit-scrollbar-thumb{background:linear-gradient(180deg,var(--brand),var(--brand-2));border-radius:10px;}
+
+/* ============================================================
+   SVG ICON BASELINE
+   ============================================================ */
+.ic{
+  width:1em;height:1em;flex:none;
+  stroke:currentColor;fill:none;
+  stroke-width:2;stroke-linecap:round;stroke-linejoin:round;
+  vertical-align:middle;
+}
+.ic-fill{fill:currentColor;stroke:none;}
+.ic-16{width:16px;height:16px;}
+.ic-18{width:18px;height:18px;}
+.ic-20{width:20px;height:20px;}
+.ic-22{width:22px;height:22px;}
+.ic-24{width:24px;height:24px;}
+.ic-26{width:26px;height:26px;}
+.ic-28{width:28px;height:28px;}
+
+/* ============================================================
+   BACKGROUND GLOW
+   ============================================================ */
+.bg-glow{position:fixed;inset:0;z-index:0;pointer-events:none;overflow:hidden;}
+.bg-glow::before,.bg-glow::after{
+  content:'';position:absolute;width:70vmax;height:70vmax;border-radius:50%;
+  filter:blur(130px);opacity:.22;
+}
+.bg-glow::before{background:radial-gradient(circle,#7c3aed 0%,transparent 62%);top:-28vmax;left:-20vmax;}
+.bg-glow::after{background:radial-gradient(circle,#0891b2 0%,transparent 62%);bottom:-32vmax;right:-22vmax;}
+.bg-grid{
+  position:fixed;inset:0;z-index:0;pointer-events:none;opacity:.35;
+  background-image:linear-gradient(rgba(255,255,255,.028) 1px,transparent 1px),
+                   linear-gradient(90deg,rgba(255,255,255,.028) 1px,transparent 1px);
+  background-size:70px 70px;
+  mask-image:radial-gradient(ellipse 90% 60% at 50% 40%,#000 20%,transparent 80%);
+  -webkit-mask-image:radial-gradient(ellipse 90% 60% at 50% 40%,#000 20%,transparent 80%);
+}
+
+/* ============================================================
+   NAV
+   ============================================================ */
+.nav{
+  position:fixed;top:0;left:0;right:0;z-index:60;
+  display:flex;align-items:center;justify-content:space-between;gap:20px;
+  padding:14px clamp(16px,5vw,64px);
+  background:rgba(6,6,11,.6);
+  backdrop-filter:blur(18px) saturate(160%);
+  -webkit-backdrop-filter:blur(18px) saturate(160%);
+  border-bottom:1px solid var(--line);
+}
+.brand{display:flex;align-items:center;gap:12px;font-family:var(--font-display);font-weight:700;letter-spacing:-.02em;}
+.brand-mark{
+  width:38px;height:38px;border-radius:12px;flex:none;
+  background:linear-gradient(140deg,var(--brand),var(--brand-2));
+  display:grid;place-items:center;color:#fff;
+  box-shadow:0 0 28px rgba(124,58,237,.55);
+}
+.brand-txt{display:flex;flex-direction:column;line-height:1.1;}
+.brand-txt b{font-size:15px;font-weight:700;}
+.brand-txt span{font-size:10.5px;color:var(--muted-2);letter-spacing:.14em;text-transform:uppercase;font-weight:500;}
+
+.nav-links{display:flex;align-items:center;gap:6px;}
+.nav-links a{
+  padding:8px 14px;border-radius:10px;font-size:13.5px;font-weight:500;color:var(--muted);
+  transition:.25s;
+}
+.nav-links a:hover{color:#fff;background:var(--surface-2);}
+
+.nav-cta{
+  display:inline-flex;align-items:center;gap:9px;
+  padding:10px 18px;border-radius:12px;font-size:13.5px;font-weight:600;
+  background:linear-gradient(135deg,var(--brand),var(--brand-3));
+  color:#fff;box-shadow:0 10px 30px -10px rgba(124,58,237,.9);
+  transition:.3s;
+}
+.nav-cta:hover{transform:translateY(-2px);box-shadow:0 16px 40px -12px rgba(124,58,237,1);}
+
+@media(max-width:900px){.nav-links{display:none;}}
+
+/* ============================================================
+   HERO 3D
+   ============================================================ */
+.hero-wrap{position:relative;height:250vh;z-index:1;}
+.hero-sticky{
+  position:sticky;top:0;height:100vh;overflow:hidden;
+}
+#scene{position:absolute;inset:0;width:100%;height:100%;}
+
+.hero-sticky::after{
+  content:'';position:absolute;inset:0;pointer-events:none;
+  background:radial-gradient(ellipse 70% 70% at 50% 50%,transparent 40%,rgba(6,6,11,.75) 100%);
+}
+
+.labels{position:absolute;inset:0;pointer-events:none;z-index:4;}
+.part-label{
+  position:absolute;left:0;top:0;white-space:nowrap;
+  padding:5px 11px;border-radius:100px;
+  font-size:11px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;
+  color:#dfe6ff;
+  background:rgba(12,12,22,.72);
+  border:1px solid rgba(124,58,237,.5);
+  box-shadow:0 0 24px rgba(124,58,237,.35), inset 0 0 20px rgba(34,211,238,.06);
+  backdrop-filter:blur(8px);
+  opacity:0;transition:opacity .35s ease;
+}
+.part-label::before{
+  content:'';position:absolute;left:-4px;top:50%;width:6px;height:6px;border-radius:50%;
+  background:var(--brand-2);transform:translateY(-50%);
+  box-shadow:0 0 12px var(--brand-2);
+}
+
+.hero-copy-wrap{
+  position:absolute;inset:0;z-index:5;display:flex;align-items:center;
+  padding:0 clamp(18px,6vw,90px);pointer-events:none;
+}
+.hero-copy{max-width:560px;pointer-events:auto;will-change:opacity,transform;}
+
+.pill{
+  display:inline-flex;align-items:center;gap:9px;
+  padding:7px 15px 7px 9px;border-radius:100px;
+  background:var(--surface-2);border:1px solid var(--line-2);
+  font-size:12.5px;font-weight:500;color:#c9d0e6;
+  backdrop-filter:blur(10px);
+  margin-bottom:26px;
+}
+.pill .dot{width:7px;height:7px;border-radius:50%;background:var(--green);box-shadow:0 0 10px var(--green);animation:pulse 2s infinite;}
+@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.45;transform:scale(.8)}}
+.pill b{color:#fff;font-weight:700;}
+.pill .star-ic{color:var(--gold);width:14px;height:14px;}
+
+h1.hero-title{
+  font-family:var(--font-display);
+  font-size:clamp(2.6rem,7vw,5.2rem);
+  line-height:.98;font-weight:700;letter-spacing:-.035em;
+  margin-bottom:22px;
+}
+h1.hero-title .grad{
+  background:linear-gradient(100deg,#a78bfa 0%,#60a5fa 45%,#22d3ee 100%);
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+  background-size:200% auto;
+  animation:shine 6s linear infinite;
+}
+@keyframes shine{to{background-position:200% center;}}
+
+.hero-sub{
+  font-size:clamp(14.5px,1.6vw,17px);color:var(--muted);max-width:460px;
+  margin-bottom:34px;line-height:1.7;
+}
+
+.hero-actions{display:flex;flex-wrap:wrap;gap:14px;}
+.btn{
+  display:inline-flex;align-items:center;gap:10px;
+  padding:14px 26px;border-radius:14px;
+  font-size:14.5px;font-weight:600;letter-spacing:-.01em;
+  transition:.3s cubic-bezier(.2,.8,.2,1);
+}
+.btn .ic{width:18px;height:18px;}
+.btn-primary{
+  background:linear-gradient(135deg,var(--brand),var(--brand-3));
+  color:#fff;box-shadow:0 18px 45px -18px rgba(124,58,237,1);
+}
+.btn-primary:hover{transform:translateY(-3px);box-shadow:0 24px 55px -18px rgba(124,58,237,1);}
+.btn-ghost{
+  background:var(--surface-2);color:#fff;border:1px solid var(--line-2);
+  backdrop-filter:blur(10px);
+}
+.btn-ghost:hover{background:rgba(255,255,255,.1);transform:translateY(-3px);}
+
+.scroll-hint{
+  position:absolute;left:50%;bottom:34px;transform:translateX(-50%);
+  z-index:6;display:flex;flex-direction:column;align-items:center;gap:9px;
+  font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--muted-2);
+  transition:opacity .4s;
+}
+.scroll-hint .bar{
+  width:1px;height:44px;background:linear-gradient(180deg,transparent,var(--brand-2),transparent);
+  animation:down 1.9s ease-in-out infinite;
+}
+@keyframes down{0%{transform:scaleY(.2);opacity:.2}50%{transform:scaleY(1);opacity:1}100%{transform:scaleY(.2);opacity:.2}}
+
+@media(max-width:760px){
+  .hero-copy-wrap{align-items:flex-end;padding-bottom:90px;}
+  .hero-sub{font-size:14px;}
+}
+
+/* ============================================================
+   MARQUEE
+   ============================================================ */
+.marquee{
+  position:relative;z-index:2;overflow:hidden;
+  border-top:1px solid var(--line);border-bottom:1px solid var(--line);
+  background:linear-gradient(90deg,rgba(124,58,237,.06),rgba(34,211,238,.05));
+  padding:20px 0;
+}
+.marquee-track{display:flex;gap:64px;width:max-content;animation:marq 34s linear infinite;}
+.marquee:hover .marquee-track{animation-play-state:paused;}
+@keyframes marq{to{transform:translateX(-50%);}}
+.marquee-item{
+  display:flex;align-items:center;gap:14px;flex:none;
+  font-family:var(--font-display);font-size:14px;font-weight:600;
+  letter-spacing:.14em;text-transform:uppercase;color:var(--muted-2);
+  transition:.3s;
+}
+.marquee-item:hover{color:#fff;}
+.marquee-item .sep{color:var(--brand);font-size:9px;}
+
+/* ============================================================
+   SECTIONS
+   ============================================================ */
+section.block{position:relative;z-index:2;padding:clamp(72px,10vw,130px) clamp(18px,6vw,90px);scroll-margin-top:80px;}
+
+.sec-head{max-width:760px;margin-bottom:56px;}
+.sec-kicker{
+  display:inline-flex;align-items:center;gap:9px;
+  font-size:11.5px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;
+  color:var(--brand-2);margin-bottom:16px;
+}
+.sec-kicker::before{content:'';width:26px;height:1px;background:linear-gradient(90deg,var(--brand),var(--brand-2));}
+h2.sec-title{
+  font-family:var(--font-display);
+  font-size:clamp(1.9rem,4vw,3.1rem);
+  line-height:1.08;font-weight:700;letter-spacing:-.03em;margin-bottom:16px;
+}
+.sec-desc{color:var(--muted);font-size:clamp(14.5px,1.5vw,16.5px);max-width:600px;}
+
+/* ---------- OVERVIEW CARDS ---------- */
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(255px,1fr));gap:20px;}
+.card{
+  position:relative;overflow:hidden;
+  padding:30px 26px 32px;border-radius:var(--radius);
+  background:linear-gradient(160deg,rgba(255,255,255,.055),rgba(255,255,255,.015));
+  border:1px solid var(--line);
+  transition:.45s cubic-bezier(.2,.8,.2,1);
+}
+.card::after{
+  content:'';position:absolute;inset:0;border-radius:var(--radius);pointer-events:none;
+  background:radial-gradient(400px circle at var(--mx,50%) var(--my,0%),rgba(124,58,237,.16),transparent 65%);
+  opacity:0;transition:opacity .45s;
+}
+.card:hover{transform:translateY(-7px);border-color:var(--line-2);box-shadow:var(--shadow);}
+.card:hover::after{opacity:1;}
+.card-ico{
+  width:52px;height:52px;border-radius:15px;display:grid;place-items:center;
+  margin-bottom:20px;color:#c4b5fd;
+  background:linear-gradient(140deg,rgba(124,58,237,.32),rgba(34,211,238,.16));
+  border:1px solid rgba(124,58,237,.35);
+  box-shadow:inset 0 0 26px rgba(124,58,237,.22);
+}
+.card-ico svg{width:26px;height:26px;}
+.card h3{font-family:var(--font-display);font-size:18px;font-weight:600;margin-bottom:9px;letter-spacing:-.01em;}
+.card p{font-size:14px;color:var(--muted);line-height:1.7;}
+
+/* ---------- STATS STRIP ---------- */
+.stats{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:1px;
+  margin-top:56px;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;
+  background:var(--line);
+}
+.stat{background:var(--bg-2);padding:30px 24px;text-align:center;}
+.stat b{
+  display:block;font-family:var(--font-display);font-size:clamp(1.7rem,3.4vw,2.5rem);
+  font-weight:700;letter-spacing:-.03em;
+  background:linear-gradient(120deg,#a78bfa,#22d3ee);
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.stat span{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted-2);font-weight:600;}
+
+/* ---------- REVIEWS ---------- */
+.rev-layout{display:grid;grid-template-columns:340px 1fr;gap:28px;align-items:start;}
+@media(max-width:900px){.rev-layout{grid-template-columns:1fr;}}
+
+.rev-summary{
+  padding:32px 28px;border-radius:var(--radius);
+  background:linear-gradient(165deg,rgba(124,58,237,.14),rgba(255,255,255,.02));
+  border:1px solid var(--line);text-align:center;
+  position:sticky;top:100px;
+}
+@media(max-width:900px){.rev-summary{position:static;}}
+.rev-score{
+  font-family:var(--font-display);font-size:4.4rem;font-weight:700;line-height:1;
+  letter-spacing:-.05em;
+  background:linear-gradient(120deg,#fbbf24,#f97316);
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.rev-stars{display:flex;justify-content:center;gap:3px;margin:12px 0 8px;color:var(--gold);}
+.rev-stars svg{width:19px;height:19px;}
+.rev-count{font-size:13.5px;color:var(--muted);}
+.rev-count b{color:#fff;}
+
+.bars{margin-top:26px;display:flex;flex-direction:column;gap:9px;}
+.bar-row{display:flex;align-items:center;gap:11px;font-size:12px;color:var(--muted);}
+.bar-row .lbl{width:26px;text-align:right;font-weight:600;color:#cbd3e8;}
+.bar-track{flex:1;height:7px;border-radius:100px;background:rgba(255,255,255,.08);overflow:hidden;}
+.bar-fill{height:100%;border-radius:100px;background:linear-gradient(90deg,var(--brand),var(--brand-2));width:0;transition:width 1.4s cubic-bezier(.2,.8,.2,1);}
+.bar-row .pct{width:32px;font-size:11.5px;color:var(--muted-2);}
+
+.rev-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px;}
+.rev-card{
+  padding:26px 24px;border-radius:var(--radius);
+  background:var(--surface);border:1px solid var(--line);
+  transition:.4s;
+}
+.rev-card:hover{background:var(--surface-2);transform:translateY(-5px);border-color:var(--line-2);}
+.rev-top{display:flex;align-items:center;gap:13px;margin-bottom:14px;}
+.avatar{
+  width:44px;height:44px;border-radius:50%;flex:none;display:grid;place-items:center;
+  font-weight:700;font-size:16px;color:#fff;
+  background:linear-gradient(140deg,var(--brand),var(--brand-2));
+}
+.rev-name{font-size:14px;font-weight:600;}
+.rev-meta{font-size:11.5px;color:var(--muted-2);}
+.rev-body{font-size:13.8px;color:var(--muted);line-height:1.72;}
+.rev-stars-sm{display:flex;gap:2px;color:var(--gold);margin-bottom:9px;}
+.rev-stars-sm svg{width:13px;height:13px;}
+
+/* ---------- ABOUT / VISIT ---------- */
+.visit-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:26px;align-items:stretch;}
+@media(max-width:960px){.visit-grid{grid-template-columns:1fr;}}
+
+.info-card{
+  padding:34px 30px;border-radius:var(--radius);
+  background:linear-gradient(165deg,rgba(255,255,255,.055),rgba(255,255,255,.015));
+  border:1px solid var(--line);
+}
+.info-row{display:flex;gap:16px;padding:17px 0;border-bottom:1px solid var(--line);}
+.info-row:last-of-type{border-bottom:none;}
+.info-ico{
+  width:40px;height:40px;flex:none;border-radius:12px;display:grid;place-items:center;
+  color:#a78bfa;
+  background:rgba(124,58,237,.14);border:1px solid rgba(124,58,237,.28);
+}
+.info-ico svg{width:18px;height:18px;}
+.info-row .lbl{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted-2);font-weight:700;margin-bottom:4px;}
+.info-row .val{font-size:14.5px;color:#e6eaf7;line-height:1.6;}
+.info-row .val a:hover{color:var(--brand-2);}
+
+.status-open{display:inline-flex;align-items:center;gap:7px;color:#f87171;font-weight:600;font-size:13.5px;}
+.status-open .dot{width:7px;height:7px;border-radius:50%;background:#ef4444;box-shadow:0 0 10px #ef4444;}
+
+.action-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px;}
+.chip{
+  display:inline-flex;align-items:center;gap:8px;
+  padding:10px 17px;border-radius:100px;font-size:13px;font-weight:600;
+  background:var(--surface-2);border:1px solid var(--line-2);color:#dbe1f2;
+  transition:.28s;
+}
+.chip svg{width:15px;height:15px;}
+.chip:hover{background:rgba(124,58,237,.22);border-color:var(--brand);color:#fff;transform:translateY(-2px);}
+
+.map-card{
+  border-radius:var(--radius);overflow:hidden;border:1px solid var(--line);
+  min-height:440px;position:relative;background:var(--bg-2);
+}
+.map-card iframe{width:100%;height:100%;min-height:440px;border:0;filter:grayscale(.35) contrast(1.06) brightness(.86);transition:filter .5s;}
+.map-card:hover iframe{filter:grayscale(0) contrast(1) brightness(.95);}
+
+/* ---------- CTA BANNER ---------- */
+.cta-band{
+  position:relative;z-index:2;
+  margin:0 clamp(18px,6vw,90px) clamp(60px,8vw,110px);
+  padding:clamp(44px,7vw,80px) clamp(24px,5vw,70px);
+  border-radius:32px;text-align:center;overflow:hidden;
+  background:linear-gradient(140deg,rgba(124,58,237,.28),rgba(34,211,238,.16));
+  border:1px solid rgba(124,58,237,.4);
+  box-shadow:0 40px 100px -40px rgba(124,58,237,.9);
+}
+.cta-band::before{
+  content:'';position:absolute;inset:-50%;
+  background:conic-gradient(from 0deg,transparent,rgba(124,58,237,.22),transparent 30%);
+  animation:spin 12s linear infinite;
+}
+@keyframes spin{to{transform:rotate(360deg);}}
+.cta-band > *{position:relative;z-index:1;}
+.cta-band h2{font-family:var(--font-display);font-size:clamp(1.8rem,4vw,3rem);font-weight:700;letter-spacing:-.03em;margin-bottom:14px;}
+.cta-band p{color:#cdd5ec;max-width:560px;margin:0 auto 30px;font-size:15.5px;}
+
+/* ---------- FOOTER ---------- */
+footer{
+  position:relative;z-index:2;
+  border-top:1px solid var(--line);
+  padding:56px clamp(18px,6vw,90px) 34px;
+  background:rgba(255,255,255,.012);
+}
+.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px;margin-bottom:44px;}
+@media(max-width:800px){.foot-grid{grid-template-columns:1fr;gap:30px;}}
+.foot-grid h4{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted-2);font-weight:700;margin-bottom:16px;}
+.foot-grid p,.foot-grid a{font-size:14px;color:var(--muted);}
+.foot-grid ul{list-style:none;display:flex;flex-direction:column;gap:10px;}
+.foot-grid a:hover{color:var(--brand-2);}
+.foot-grid .with-ic{display:inline-flex;align-items:center;gap:9px;}
+.foot-grid .with-ic svg{width:14px;height:14px;color:var(--brand-2);}
+.foot-bottom{
+  border-top:1px solid var(--line);padding-top:24px;
+  display:flex;flex-wrap:wrap;gap:14px;justify-content:space-between;align-items:center;
+  font-size:12.5px;color:var(--muted-2);
+}
+
+/* ---------- REVEAL ANIM ---------- */
+.reveal{opacity:0;transform:translateY(34px);transition:opacity .9s cubic-bezier(.2,.8,.2,1),transform .9s cubic-bezier(.2,.8,.2,1);}
+.reveal.in{opacity:1;transform:none;}
+
+/* ---------- MOBILE TWEAKS ---------- */
+@media(max-width:600px){
+  .stats{grid-template-columns:1fr 1fr;}
+  .cta-band{border-radius:24px;}
+  .part-label{font-size:9.5px;padding:4px 9px;}
+}
+</style>
+</head>
+
+<body>
+
+<div class="bg-glow"></div>
+<div class="bg-grid"></div>
+
+<!-- ============================================================
+     SVG ICON SPRITE — all icons defined once, reused with <use>
+     ============================================================ -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <!-- phone (handset) -->
+    <symbol id="i-phone" viewBox="0 0 24 24">
+      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/>
+    </symbol>
+
+    <!-- smartphone -->
+    <symbol id="i-smartphone" viewBox="0 0 24 24">
+      <rect x="5" y="2" width="14" height="20" rx="2.5"/>
+      <line x1="12" y1="18" x2="12" y2="18.01"/>
+    </symbol>
+
+    <!-- phone case (smartphone with shield corner) -->
+    <symbol id="i-case" viewBox="0 0 24 24">
+      <rect x="6" y="2" width="12" height="20" rx="2.5"/>
+      <circle cx="12" cy="13" r="2"/>
+      <circle cx="9.5" cy="6" r="1.2"/>
+    </symbol>
+
+    <!-- zap / fast charge -->
+    <symbol id="i-zap" viewBox="0 0 24 24">
+      <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+    </symbol>
+
+    <!-- headphones -->
+    <symbol id="i-headphones" viewBox="0 0 24 24">
+      <path d="M3 18v-6a9 9 0 0 1 18 0v6"/>
+      <path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3z"/>
+      <path d="M3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"/>
+    </symbol>
+
+    <!-- battery / power bank -->
+    <symbol id="i-battery" viewBox="0 0 24 24">
+      <rect x="2" y="7" width="16" height="10" rx="2.5"/>
+      <line x1="22" y1="11" x2="22" y2="13"/>
+      <line x1="6" y1="11" x2="6" y2="13"/>
+      <line x1="10" y1="10" x2="10" y2="14"/>
+      <line x1="14" y1="11" x2="14" y2="13"/>
+    </symbol>
+
+    <!-- shield / protection -->
+    <symbol id="i-shield" viewBox="0 0 24 24">
+      <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+      <polyline points="9 12 11 14 15 10"/>
+    </symbol>
+
+    <!-- truck / delivery -->
+    <symbol id="i-truck" viewBox="0 0 24 24">
+      <rect x="1" y="3" width="15" height="13" rx="1.5"/>
+      <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/>
+      <circle cx="5.5" cy="18.5" r="2.5"/>
+      <circle cx="18.5" cy="18.5" r="2.5"/>
+    </symbol>
+
+    <!-- map pin -->
+    <symbol id="i-map-pin" viewBox="0 0 24 24">
+      <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+      <circle cx="12" cy="10" r="3"/>
+    </symbol>
+
+    <!-- clock -->
+    <symbol id="i-clock" viewBox="0 0 24 24">
+      <circle cx="12" cy="12" r="10"/>
+      <polyline points="12 6 12 12 16 14"/>
+    </symbol>
+
+    <!-- globe -->
+    <symbol id="i-globe" viewBox="0 0 24 24">
+      <circle cx="12" cy="12" r="10"/>
+      <line x1="2" y1="12" x2="22" y2="12"/>
+      <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+    </symbol>
+
+    <!-- compass -->
+    <symbol id="i-compass" viewBox="0 0 24 24">
+      <circle cx="12" cy="12" r="10"/>
+      <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/>
+    </symbol>
+
+    <!-- navigation (directions arrow) -->
+    <symbol id="i-navigation" viewBox="0 0 24 24">
+      <polygon points="3 11 22 2 13 21 11 13 3 11"/>
+    </symbol>
+
+    <!-- bookmark -->
+    <symbol id="i-bookmark" viewBox="0 0 24 24">
+      <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/>
+    </symbol>
+
+    <!-- send (paper plane) -->
+    <symbol id="i-send" viewBox="0 0 24 24">
+      <line x1="22" y1="2" x2="11" y2="13"/>
+      <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+    </symbol>
+
+    <!-- share -->
+    <symbol id="i-share" viewBox="0 0 24 24">
+      <circle cx="18" cy="5" r="3"/>
+      <circle cx="6" cy="12" r="3"/>
+      <circle cx="18" cy="19" r="3"/>
+      <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/>
+      <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/>
+    </symbol>
+
+    <!-- star (filled) -->
+    <symbol id="i-star" viewBox="0 0 24 24">
+      <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+    </symbol>
+
+    <!-- external link -->
+    <symbol id="i-external" viewBox="0 0 24 24">
+      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+      <polyline points="15 3 21 3 21 9"/>
+      <line x1="10" y1="14" x2="21" y2="3"/>
+    </symbol>
+
+    <!-- diamond separator -->
+    <symbol id="i-diamond" viewBox="0 0 24 24">
+      <path d="M12 3l3 3-3 15-3-15z" fill="currentColor" stroke="none"/>
+    </symbol>
+  </defs>
+</svg>
+
+<!-- ================= NAV ================= -->
+<header class="nav">
+  <a class="brand" href="#top">
+    <div class="brand-mark">
+      <svg class="ic ic-20" viewBox="0 0 24 24"><use href="#i-smartphone"/></svg>
+    </div>
+    <div class="brand-txt">
+      <b>Xcessories Hub</b>
+      <span>Cell Phone Accessories</span>
+    </div>
+  </a>
+  <nav class="nav-links">
+    <a href="#overview">Overview</a>
+    <a href="#reviews">Reviews</a>
+    <a href="#about">About</a>
+    <a href="#visit">Directions</a>
+  </nav>
+  <a class="nav-cta" href="tel:+923071330303">
+    <svg class="ic ic-16" viewBox="0 0 24 24"><use href="#i-phone"/></svg>
+    Call Now
+  </a>
+</header>
+
+<main id="top">
+
+  <!-- ================= HERO 3D ================= -->
+  <section class="hero-wrap" id="heroWrap">
+    <div class="hero-sticky">
+      <canvas id="scene"></canvas>
+      <div class="labels" id="labels"></div>
+
+      <div class="hero-copy-wrap">
+        <div class="hero-copy" id="heroCopy">
+          <div class="pill">
+            <span class="dot"></span>
+            <svg class="star-ic ic-fill" viewBox="0 0 24 24"><use href="#i-star"/></svg>
+            <b>4.6</b> · 526 reviews · Gulberg, Lahore
+          </div>
+
+          <h1 class="hero-title">
+            Every<br>
+            <span class="grad">Accessory</span><br>
+            Exploded.
+          </h1>
+
+          <p class="hero-sub">
+            Cases, fast chargers, wireless earbuds, power banks and screen protection —
+            hand-picked for your phone. Scroll to take the device apart.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#visit">
+              <svg class="ic" viewBox="0 0 24 24"><use href="#i-navigation"/></svg>
+              Get Directions
+            </a>
+            <a class="btn btn-ghost" href="tel:+923071330303">
+              <svg class="ic" viewBox="0 0 24 24"><use href="#i-phone"/></svg>
+              +92 307 1330303
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="scroll-hint" id="scrollHint">
+        <span>Scroll to explode</span>
+        <div class="bar"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= MARQUEE ================= -->
+  <div class="marquee">
+    <div class="marquee-track" id="marqueeTrack">
+      <div class="marquee-item"><span>Phone Cases</span><svg class="sep ic-fill" width="10" height="10" viewBox="0 0 24 24"><use href="#i-diamond"/></svg></div>
+      <div class="marquee-item"><span>Fast Chargers</span><svg class="sep ic-fill" width="10" height="10" viewBox="0 0 24 24"><use href="#i-diamond"/></svg></div>
+      <div class="marquee-item"><span>Wireless Earbuds</span><svg class="sep ic-fill" width="10" height="10" viewBox="0 0 24 24"><use href="#i-diamond"/></svg></div>
+      <div class="marquee-item"><span>Power Banks</span><svg class="sep ic-fill" width="10" height="10" viewBox="0 0 24 24"><use href="#i-diamond"/></svg></div>
+      <div class="marquee-item"><span>Screen Protectors</span><svg class="sep ic-fill" width="10" height="10" viewBox="0 0 24 24"><use href="#i-diamond"/></svg></div>
+      <div class="marquee-item"><span>Car Mounts</span><svg class="sep ic-fill" width="10" height="10" viewBox="0 0 24 24"><use href="#i-diamond"/></svg></div>
+      <div class="marquee-item"><span>Cables & Adapters</span><svg class="sep ic-fill" width="10" height="10" viewBox="0 0 24 24"><use href="#i-diamond"/></svg></div>
+      <div class="marquee-item"><span>Phone Holders</span><svg class="sep ic-fill" width="10" height="10" viewBox="0 0 24 24"><use href="#i-diamond"/></svg></div>
+    </div>
+  </div>
+
+  <!-- ================= OVERVIEW ================= -->
+  <section class="block" id="overview">
+    <div class="sec-head reveal">
+      <div class="sec-kicker">Overview</div>
+      <h2 class="sec-title">Your phone deserves<br>better accessories.</h2>
+      <p class="sec-desc">
+        Located in Jeff Heights, Gulberg — Xcessories Hub stocks premium mobile accessories
+        for every major brand, backed by real warranty and honest advice.
+      </p>
+    </div>
+
+    <div class="cards">
+      <div class="card reveal">
+        <div class="card-ico">
+          <svg class="ic" viewBox="0 0 24 24"><use href="#i-case"/></svg>
+        </div>
+        <h3>Cases & Covers</h3>
+        <p>Silicone, clear, leather and shockproof armour cases for iPhone, Samsung, Infinix, Tecno and more.</p>
+      </div>
+      <div class="card reveal">
+        <div class="card-ico">
+          <svg class="ic" viewBox="0 0 24 24"><use href="#i-zap"/></svg>
+        </div>
+        <h3>Fast Chargers</h3>
+        <p>20W – 120W GaN adapters, Type-C PD bricks and multi-port chargers that actually hit rated speed.</p>
+      </div>
+      <div class="card reveal">
+        <div class="card-ico">
+          <svg class="ic" viewBox="0 0 24 24"><use href="#i-headphones"/></svg>
+        </div>
+        <h3>Audio & Earbuds</h3>
+        <p>TWS earbuds, neckbands and wired headsets with deep bass, ENC calling and long battery life.</p>
+      </div>
+      <div class="card reveal">
+        <div class="card-ico">
+          <svg class="ic" viewBox="0 0 24 24"><use href="#i-battery"/></svg>
+        </div>
+        <h3>Power Banks</h3>
+        <p>10,000 – 30,000 mAh power banks with fast charge in/out, digital displays and slim builds.</p>
+      </div>
+      <div class="card reveal">
+        <div class="card-ico">
+          <svg class="ic" viewBox="0 0 24 24"><use href="#i-shield"/></svg>
+        </div>
+        <h3>Screen Protection</h3>
+        <p>Tempered glass, privacy filters and 9H ceramic shields — applied free, bubble-free, on the spot.</p>
+      </div>
+      <div class="card reveal">
+        <div class="card-ico">
+          <svg class="ic" viewBox="0 0 24 24"><use href="#i-truck"/></svg>
+        </div>
+        <h3>Nationwide Delivery</h3>
+        <p>Order over the phone or WhatsApp and get your accessories delivered anywhere in Pakistan.</p>
+      </div>
+    </div>
+
+    <div class="stats reveal">
+      <div class="stat"><b>4.6★</b><span>Google Rating</span></div>
+      <div class="stat"><b>526</b><span>Reviews</span></div>
+      <div class="stat"><b>1000+</b><span>Products</span></div>
+      <div class="stat"><b>7 Days</b><span>Open Weekly</span></div>
+    </div>
+  </section>
+
+  <!-- ================= REVIEWS ================= -->
+  <section class="block" id="reviews">
+    <div class="sec-head reveal">
+      <div class="sec-kicker">Reviews</div>
+      <h2 class="sec-title">Rated 4.6 by 526 customers</h2>
+      <p class="sec-desc">Real feedback from people who walked into our Gulberg store — or ordered online.</p>
+    </div>
+
+    <div class="rev-layout">
+      <div class="rev-summary reveal">
+        <div class="rev-score">4.6</div>
+        <div class="rev-stars">
+          <svg class="ic-fill" viewBox="0 0 24 24"><use href="#i-star"/></svg>
+          <svg class="ic-fill" viewBox="0 0 24 24"><use href="#i-star"/></svg>
+          <svg class="ic-fill" viewBox="0 0 24 24"><use href="#i-star"/></svg>
+          <svg class="ic-fill" viewBox="0 0 24 24"><use href="#i-star"/></svg>
+          <svg class="ic-fill" viewBox="0 0 24 24"><use href="#i-star"/></svg>
+        </div>
+        <div class="rev-count">Based on <b>526</b> Google reviews</div>
+
+        <div class="bars">
+          <div class="bar-row"><span class="lbl">5</span><div class="bar-track"><div class="bar-fill" data-w="78%"></div></div><span class="pct">78%</span></div>
+          <div class="bar-row"><span class="lbl">4</span><div class="bar-track"><div class="bar-fill" data-w="14%"></div></div><span class="pct">14%</span></div>
+          <div class="bar-row"><span class="lbl">3</span><div class="bar-track"><div class="bar-fill" data-w="5%"></div></div><span class="pct">5%</span></div>
+          <div class="bar-row"><span class="lbl">2</span><div class="bar-track"><div class="bar-fill" data-w="2%"></div></div><span class="pct">2%</span></div>
+          <div class="bar-row"><span class="lbl">1</span><div class="bar-track"><div class="bar-fill" data-w="1%"></div></div><span class="pct">1%</span></div>
+        </div>
+      </div>
+
+      <div class="rev-cards">
+        <div class="rev-card reveal">
+          <div class="rev-top">
+            <div class="avatar">A</div>
+            <div><div class="rev-name">Ahmed Raza</div><div class="rev-meta">Local Guide · 2 weeks ago</div></div>
+          </div>
+          <div class="rev-stars-sm">
+            <svg class="ic-fill" viewBox="0 0 24 24"><use href="#i-star"/></svg>
+            <svg class="ic-fill" viewBox="0 0 24 24"><use href="#i-star"/></svg>
+            <svg class="ic-fill" viewBox="0 0 24 24"><use href="#i-star"/></svg>
+            <svg class="ic-fill" viewBox="0 0 24 24"><use href="#i-star"/></svg>
+            <svg class="ic-fill" viewBox="0 0 24 24"><use href="#i-star"/></svg>
+          </div>
+          <p class="rev-body">Best accessory shop in Gulberg. Got a 65W charger and a tempered glass for my S23 — original quality and very fair price. Staff knows their stuff.</p>
+        </div>
+
+        <div class="rev-card reveal">
+          <div class="rev-top">
+            <div class="avatar">H</div>
+            <div><div class="rev-name">Hira Khan</div><div class="rev-meta">3 weeks ago</div></div>
+          </div>
+          <div class="rev-stars-sm">
+            <svg class="ic-fill" viewBox="0 0 24 24"><use href="#i-star"/></svg>
+            <svg class="ic-fill" viewBox="0 0 24 24"><use href="#i-star"/></svg>
+            <svg class="ic-fill" viewBox="0 0 24 24"><use href="#i-star"/></svg>
+            <svg class="ic-fill" viewBox="0 0 24 24"><use href="#i-star"/></svg>
+            <svg class="ic-fill" viewBox="0 0 24 24"><use href="#i-star"/></svg>
+          </div>
+          <p class="rev-body">Huge variety of cases. I found a clear MagSafe case I couldn't find anywhere else in Lahore. They applied the screen protector perfectly, no bubbles.</p>
+        </div>
+
+        <div class="rev-card reveal">
+          <div class="rev-top">
+            <div class="avatar">B</div>
+            <div><div class="rev-name">Bilal Ahmed</div><div class="rev-meta">1 month ago</div></div>
+          </div>
+          <div class="rev-stars-sm">
+            <svg class="ic-fill" viewBox="0 0 24 24"><use href="#i-star"/></svg>
+            <svg class="ic-fill" viewBox="0 0 24 24"><use href="#i-star"/></svg>
+            <svg class="ic-fill" viewBox="0 0 24 24"><use href="#i-star"/></svg>
+            <svg class="ic-fill" viewBox="0 0 24 24"><use href="#i-star"/></svg>
+            <svg class="ic" style="opacity:.28" viewBox="0 0 24 24"><use href="#i-star"/></svg>
+          </div>
+          <p class="rev-body">Bought TWS earbuds here. Sound quality is great for the price and they gave a proper warranty card. Shop is a bit small but the collection is massive.</p>
+        </div>
+
+        <div class="rev-card reveal">
+          <div class="rev-top">
+            <div class="avatar">S</div>
+            <div><div class="rev-name">Sana Malik</div><div class="rev-meta">1 month ago</div></div>
+          </div>
+          <div class="rev-stars-sm">
+            <svg class="ic-fill" viewBox="0 0 24 24"><use href="#i-star"/></svg>
+            <svg class="ic-fill" viewBox="0 0 24 24"><use href="#i-star"/></svg>
+            <svg class="ic-fill" viewBox="0 0 24 24"><use href="#i-star"/></svg>
+            <svg class="ic-fill" viewBox="0 0 24 24"><use href="#i-star"/></svg>
+            <svg class="ic-fill" viewBox="0 0 24 24"><use href="#i-star"/></svg>
+          </div>
+          <p class="rev-body">Ordered a power bank over WhatsApp and it was delivered to DHA the same evening. Genuine product, sealed box. Highly recommended.</p>
+        </div>
+
+        <div class="rev-card reveal">
+          <div class="rev-top">
+            <div class="avatar">U</div>
+            <div><div class="rev-name">Usman Tariq</div><div class="rev-meta">2 months ago</div></div>
+          </div>
+          <div class="rev-stars-sm">
+            <svg class="ic-fill" viewBox="0 0 24 24"><use href="#i-star"/></svg>
+            <svg class="ic-fill" viewBox="0 0 24 24"><use href="#i-star"/></svg>
+            <svg class="ic-fill" viewBox="0 0 24 24"><use href="#i-star"/></svg>
+            <svg class="ic-fill" viewBox="0 0 24 24"><use href="#i-star"/></svg>
+            <svg class="ic-fill" viewBox="0 0 24 24"><use href="#i-star"/></svg>
+          </div>
+          <p class="rev-body">Very honest pricing. I compared online and they were cheaper than most, plus I could test the product before buying. Will come back.</p>
+        </div>
+
+        <div class="rev-card reveal">
+          <div class="rev-top">
+            <div class="avatar">F</div>
+            <div><div class="rev-name">Fatima Noor</div><div class="rev-meta">2 months ago</div></div>
+          </div>
+          <div class="rev-stars-sm">
+            <svg class="ic-fill" viewBox="0 0 24 24"><use href="#i-star"/></svg>
+            <svg class="ic-fill" viewBox="0 0 24 24"><use href="#i-star"/></svg>
+            <svg class="ic-fill" viewBox="0 0 24 24"><use href="#i-star"/></svg>
+            <svg class="ic-fill" viewBox="0 0 24 24"><use href="#i-star"/></svg>
+            <svg class="ic" style="opacity:.28" viewBox="0 0 24 24"><use href="#i-star"/></svg>
+          </div>
+          <p class="rev-body">Great collection of cables and car mounts. Parking near Jeff Heights can be tricky in the evening, but the shop itself is worth the trip.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= ABOUT / VISIT ================= -->
+  <section class="block" id="about">
+    <div class="sec-head reveal">
+      <div class="sec-kicker">About & Directions</div>
+      <h2 class="sec-title">Find us in Jeff Heights, Gulberg</h2>
+      <p class="sec-desc">
+        Xcessories Hub is a dedicated cell phone accessory store in the heart of Gulberg, Lahore.
+        We stock only tested, warranty-backed products — no fakes, no surprises.
+      </p>
+    </div>
+
+    <div class="visit-grid" id="visit">
+      <div class="info-card reveal">
+        <div class="info-row">
+          <div class="info-ico">
+            <svg class="ic" viewBox="0 0 24 24"><use href="#i-map-pin"/></svg>
+          </div>
+          <div>
+            <div class="lbl">Address</div>
+            <div class="val">
+              G-68, Lahore Jeff Heights, Block E1, Block E 1 Gulberg,<br>
+              Lahore, 54000, Pakistan
+            </div>
+          </div>
+        </div>
+
+        <div class="info-row">
+          <div class="info-ico">
+            <svg class="ic" viewBox="0 0 24 24"><use href="#i-clock"/></svg>
+          </div>
+          <div>
+            <div class="lbl">Hours</div>
+            <div class="val">
+              <span class="status-open"><span class="dot"></span> Closed · Opens 12 PM</span><br>
+              <span style="color:var(--muted);font-size:13.5px;">Monday – Sunday · 12:00 PM – 11:00 PM</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="info-row">
+          <div class="info-ico">
+            <svg class="ic" viewBox="0 0 24 24"><use href="#i-phone"/></svg>
+          </div>
+          <div>
+            <div class="lbl">Phone</div>
+            <div class="val"><a href="tel:+923071330303">+92 307 1330303</a></div>
+          </div>
+        </div>
+
+        <div class="info-row">
+          <div class="info-ico">
+            <svg class="ic" viewBox="0 0 24 24"><use href="#i-globe"/></svg>
+          </div>
+          <div>
+            <div class="lbl">Website</div>
+            <div class="val"><a href="https://xcessorieshub.com" target="_blank" rel="noopener">xcessorieshub.com</a></div>
+          </div>
+        </div>
+
+        <div class="info-row">
+          <div class="info-ico">
+            <svg class="ic" viewBox="0 0 24 24"><use href="#i-compass"/></svg>
+          </div>
+          <div>
+            <div class="lbl">Plus Code</div>
+            <div class="val">G89V+5J Lahore, Pakistan</div>
+          </div>
+        </div>
+
+        <div class="action-row">
+          <a class="chip" href="https://www.google.com/maps/search/?api=1&query=Xcessories+Hub+Jeff+Heights+Gulberg+Lahore" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" class="ic"><use href="#i-navigation"/></svg>
+            Directions
+          </a>
+          <a class="chip" href="https://www.google.com/maps/search/?api=1&query=Xcessories+Hub+Jeff+Heights+Gulberg+Lahore" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" class="ic"><use href="#i-bookmark"/></svg>
+            Save
+          </a>
+          <a class="chip" href="tel:+923071330303">
+            <svg viewBox="0 0 24 24" class="ic"><use href="#i-send"/></svg>
+            Send to phone
+          </a>
+          <button class="chip" id="shareBtn">
+            <svg viewBox="0 0 24 24" class="ic"><use href="#i-share"/></svg>
+            Share
+          </button>
+        </div>
+      </div>
+
+      <div class="map-card reveal">
+        <iframe
+          title="Xcessories Hub location map"
+          src="https://maps.google.com/maps?q=Jeff%20Heights%20Block%20E1%20Gulberg%20Lahore&t=&z=16&ie=UTF8&iwloc=&output=embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CTA BAND ================= -->
+  <div class="cta-band reveal">
+    <h2>Need an accessory today?</h2>
+    <p>Call or WhatsApp us — we'll check stock, confirm the price and hold it for you at the counter.</p>
+    <div class="hero-actions" style="justify-content:center;">
+      <a class="btn btn-primary" href="tel:+923071330303">
+        <svg class="ic" viewBox="0 0 24 24"><use href="#i-phone"/></svg>
+        Call +92 307 1330303
+      </a>
+      <a class="btn btn-ghost" href="https://xcessorieshub.com" target="_blank" rel="noopener">
+        <svg class="ic" viewBox="0 0 24 24"><use href="#i-globe"/></svg>
+        Visit Website
+      </a>
+    </div>
+  </div>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+  <div class="foot-grid">
+    <div>
+      <a class="brand" href="#top" style="margin-bottom:16px;">
+        <div class="brand-mark">
+          <svg class="ic ic-20" viewBox="0 0 24 24"><use href="#i-smartphone"/></svg>
+        </div>
+        <div class="brand-txt"><b>Xcessories Hub</b><span>Cell Phone Accessories</span></div>
+      </a>
+      <p style="max-width:340px;">
+        Premium mobile accessories in Gulberg, Lahore. Cases, chargers, earbuds,
+        power banks and screen protection — all warranty backed.
+      </p>
+    </div>
+    <div>
+      <h4>Explore</h4>
+      <ul>
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#visit">Directions</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <ul>
+        <li>
+          <a class="with-ic" href="tel:+923071330303">
+            <svg viewBox="0 0 24 24"><use href="#i-phone"/></svg>
+            +92 307 1330303
+          </a>
+        </li>
+        <li>
+          <a class="with-ic" href="https://xcessorieshub.com" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24"><use href="#i-external"/></svg>
+            xcessorieshub.com
+          </a>
+        </li>
+        <li>
+          <span class="with-ic" style="color:var(--muted)">
+            <svg viewBox="0 0 24 24"><use href="#i-map-pin"/></svg>
+            G-68, Jeff Heights, Block E1, Gulberg, Lahore 54000
+          </span>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="foot-bottom">
+    <span>© <span id="year"></span> Xcessories Hub. All rights reserved.</span>
+    <span>Rated 4.6 ★ · 526 Google reviews · Lahore, Pakistan</span>
+  </div>
+</footer>
+
+<!-- ============================================================
+     THREE.JS IMPORT MAP
+     ============================================================ -->
+<script type="importmap">
+{
+  "imports": {
+    "three": "https://unpkg.com/three@0.161.0/build/three.module.js",
+    "three/addons/": "https://unpkg.com/three@0.161.0/examples/jsm/"
+  }
+}
+</script>
+
+<script type="module">
+import * as THREE from 'three';
+import { RoundedBoxGeometry } from 'three/addons/geometries/RoundedBoxGeometry.js';
+
+/* ============================================================
+   1. RENDERER / SCENE / CAMERA
+   ============================================================ */
+const canvas   = document.getElementById('scene');
+const renderer = new THREE.WebGLRenderer({ canvas, antialias:true, alpha:true });
+renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2));
+renderer.toneMapping = THREE.ACESFilmicToneMapping;
+renderer.toneMappingExposure = 1.12;
+renderer.outputColorSpace = THREE.SRGBColorSpace;
+
+const scene  = new THREE.Scene();
+const camera = new THREE.PerspectiveCamera(38, 1, 0.1, 300);
+camera.position.set(0, 0, 15);
+
+const world = new THREE.Group();
+scene.add(world);
+
+const phone = new THREE.Group();
+world.add(phone);
+
+/* ============================================================
+   2. LIGHTS
+   ============================================================ */
+scene.add(new THREE.HemisphereLight(0x9db4ff, 0x120a24, 1.5));
+
+const keyLight = new THREE.DirectionalLight(0xffffff, 2.6);
+keyLight.position.set(6, 9, 9);
+scene.add(keyLight);
+
+const fillLight = new THREE.DirectionalLight(0x7c3aed, 2.4);
+fillLight.position.set(-9, -3, -7);
+scene.add(fillLight);
+
+const rimLight = new THREE.DirectionalLight(0x22d3ee, 2.2);
+rimLight.position.set(9, -7, 6);
+scene.add(rimLight);
+
+const warmLight = new THREE.PointLight(0xfbbf24, 40, 40);
+warmLight.position.set(-6, 5, 6);
+scene.add(warmLight);
+
+/* ============================================================
+   3. SCREEN TEXTURE (canvas generated)
+   ============================================================ */
+function makeScreenTexture(){
+  const c = document.createElement('canvas');
+  c.width = 512; c.height = 1024;
+  const ctx = c.getContext('2d');
+
+  const g = ctx.createLinearGradient(0, 0, 512, 1024);
+  g.addColorStop(0,    '#7c3aed');
+  g.addColorStop(0.45, '#2563eb');
+  g.addColorStop(1,    '#06b6d4');
+  ctx.fillStyle = g;
+  ctx.fillRect(0, 0, 512, 1024);
+
+  const blobs = [
+    [120, 200, 220, 'rgba(255,255,255,.20)'],
+    [400, 720, 260, 'rgba(34,211,238,.28)'],
+    [260, 460, 180, 'rgba(167,139,250,.30)']
+  ];
+  blobs.forEach(([x,y,r,col])=>{
+    const rg = ctx.createRadialGradient(x, y, 0, x, y, r);
+    rg.addColorStop(0, col);
+    rg.addColorStop(1, 'transparent');
+    ctx.fillStyle = rg;
+    ctx.beginPath(); ctx.arc(x, y, r, 0, Math.PI*2); ctx.fill();
+  });
+
+  ctx.strokeStyle = 'rgba(255,255,255,.07)';
+  ctx.lineWidth = 1;
+  for (let i = 0; i <= 512; i += 64){
+    ctx.beginPath(); ctx.moveTo(i, 0); ctx.lineTo(i, 1024); ctx.stroke();
+  }
+  for (let j = 0; j <= 1024; j += 64){
+    ctx.beginPath(); ctx.moveTo(0, j); ctx.lineTo(512, j); ctx.stroke();
+  }
+
+  ctx.textAlign = 'center';
+  ctx.fillStyle = 'rgba(255,255,255,.96)';
+  ctx.font = '700 58px Inter, Arial, sans-serif';
+  ctx.fillText('Xcessories', 256, 452);
+  ctx.fillText('Hub', 256, 520);
+
+  ctx.fillStyle = 'rgba(255,255,255,.78)';
+  ctx.font = '500 30px Inter, Arial, sans-serif';
+  ctx.fillText('4.6 ★  ·  526 reviews', 256, 585);
+
+  ctx.fillStyle = 'rgba(255,255,255,.5)';
+  ctx.font = '500 22px Inter, Arial, sans-serif';
+  ctx.fillText('GULBERG · LAHORE', 256, 900);
+
+  const tex = new THREE.CanvasTexture(c);
+  tex.colorSpace = THREE.SRGBColorSpace;
+  tex.anisotropy = renderer.capabilities.getMaxAnisotropy();
+  return tex;
+}
+
+/* ============================================================
+   4. MATERIAL HELPERS
+   ============================================================ */
+const matMetal = (color, metalness = 0.9, roughness = 0.3) =>
+  new THREE.MeshStandardMaterial({ color, metalness, roughness });
+
+const matSoft = (color, metalness = 0.25, roughness = 0.5) =>
+  new THREE.MeshStandardMaterial({ color, metalness, roughness });
+
+/* ============================================================
+   5. BUILD PHONE + ACCESSORIES
+   ============================================================ */
+const PARTS = [];
+
+function register(obj, offset, spin, opts = {}){
+  obj.userData.base      = obj.position.clone();
+  obj.userData.baseRot   = obj.rotation.clone();
+  obj.userData.baseScale = obj.scale.x;
+  obj.userData.offset    = new THREE.Vector3(offset[0], offset[1], offset[2]);
+  obj.userData.spin      = new THREE.Vector3(spin[0], spin[1], spin[2]);
+  obj.userData.scaleIn   = !!opts.scaleIn;
+  obj.userData.label     = opts.label || null;
+  obj.userData.floatSeed = Math.random() * Math.PI * 2;
+  PARTS.push(obj);
+  return obj;
+}
+
+/* ---------- 5.1 Phone body ---------- */
+const body = new THREE.Mesh(
+  new RoundedBoxGeometry(2.30, 4.60, 0.30, 5, 0.14),
+  matMetal(0x191b23, 0.95, 0.26)
+);
+phone.add(body);
+register(body, [0, 0, 0], [0, 0, 0]);
+
+/* ---------- 5.2 Screen ---------- */
+const screenTex = makeScreenTexture();
+const screenMat = new THREE.MeshStandardMaterial({
+  map: screenTex,
+  emissiveMap: screenTex,
+  emissive: 0xffffff,
+  emissiveIntensity: 0.85,
+  metalness: 0.05,
+  roughness: 0.16
+});
+const screen = new THREE.Mesh(new RoundedBoxGeometry(2.06, 4.34, 0.08, 4, 0.18), screenMat);
+screen.position.set(0, 0, 0.165);
+phone.add(screen);
+register(screen, [0, 0.15, 1.95], [0, 0.35, 0], { label: 'Display' });
+
+/* ---------- 5.3 Back glass ---------- */
+const backGlass = new THREE.Mesh(
+  new RoundedBoxGeometry(2.20, 4.50, 0.06, 4, 0.16),
+  matMetal(0x232633, 0.9, 0.22)
+);
+backGlass.position.set(0, 0, -0.175);
+phone.add(backGlass);
+register(backGlass, [0, -0.15, -1.75], [0, -0.3, 0]);
+
+/* ---------- 5.4 Battery ---------- */
+const battery = new THREE.Mesh(
+  new RoundedBoxGeometry(1.55, 2.00, 0.14, 3, 0.06),
+  new THREE.MeshStandardMaterial({
+    color: 0x1f2937, metalness: 0.65, roughness: 0.4,
+    emissive: 0x16a34a, emissiveIntensity: 0.35
+  })
+);
+battery.position.set(0.05, -0.85, 0);
+phone.add(battery);
+register(battery, [-3.05, -0.7, 0.35], [0.5, -0.6, 0.3], { label: 'Battery' });
+
+/* ---------- 5.5 Camera module ---------- */
+const cameraModule = new THREE.Group();
+const camPlate = new THREE.Mesh(
+  new RoundedBoxGeometry(1.02, 1.02, 0.16, 4, 0.14),
+  matMetal(0x2b2f3c, 0.92, 0.26)
+);
+cameraModule.add(camPlate);
+
+const lensMat = new THREE.MeshStandardMaterial({
+  color: 0x05060a, metalness: 1, roughness: 0.06,
+  emissive: 0x1e3a8a, emissiveIntensity: 0.5
+});
+const ringMat = matMetal(0x8b93a7, 1, 0.2);
+
+const lensPositions = [[-0.23, 0.23], [0.23, 0.23], [-0.23, -0.23]];
+lensPositions.forEach(([x, y]) => {
+  const lens = new THREE.Mesh(new THREE.CylinderGeometry(0.155, 0.155, 0.12, 26), lensMat);
+  lens.rotation.x = Math.PI / 2;
+  lens.position.set(x, y, -0.10);
+  cameraModule.add(lens);
+
+  const ring = new THREE.Mesh(new THREE.TorusGeometry(0.185, 0.028, 12, 32), ringMat);
+  ring.position.set(x, y, -0.10);
+  cameraModule.add(ring);
+});
+
+const flash = new THREE.Mesh(
+  new THREE.CircleGeometry(0.085, 16),
+  new THREE.MeshStandardMaterial({ color: 0xfff3c4, emissive: 0xffe680, emissiveIntensity: 1.1 })
+);
+flash.position.set(0.23, -0.23, -0.09);
+cameraModule.add(flash);
+
+cameraModule.position.set(-0.55, 1.62, -0.30);
+phone.add(cameraModule);
+register(cameraModule, [-1.9, 2.9, -1.5], [-0.4, 0.5, 0.25], { label: 'Camera' });
+
+/* ---------- 5.6 Earbuds ---------- */
+function makeEarbud(color){
+  const g = new THREE.Group();
+  const m = matSoft(color, 0.35, 0.34);
+  const bud = new THREE.Mesh(new THREE.SphereGeometry(0.26, 28, 20), m);
+  bud.position.set(0, 0.30, 0);
+  const stem = new THREE.Mesh(new THREE.CapsuleGeometry(0.082, 0.44, 6, 14), m);
+  stem.position.set(0, -0.08, 0);
+  stem.rotation.z = 0.10;
+  const tipMat = new THREE.MeshStandardMaterial({ color: 0x14161d, roughness: 0.75 });
+  const tip = new THREE.Mesh(new THREE.SphereGeometry(0.105, 14, 12), tipMat);
+  tip.position.set(0, 0.50, 0);
+  const ring = new THREE.Mesh(
+    new THREE.TorusGeometry(0.20, 0.022, 8, 26),
+    new THREE.MeshStandardMaterial({ color: 0x22d3ee, emissive: 0x22d3ee, emissiveIntensity: 1.4 })
+  );
+  ring.position.set(0, 0.30, 0);
+  ring.rotation.x = Math.PI / 2;
+  g.add(bud, stem, tip, ring);
+  return g;
+}
+
+const earbudL = makeEarbud(0xf3f5fa);
+earbudL.position.set(-0.40, -1.05, 0);
+phone.add(earbudL);
+register(earbudL, [-3.5, 2.7, 1.3], [0.5, 1.4, 0.4], { scaleIn: true, label: 'Earbuds' });
+
+const earbudR = makeEarbud(0xf3f5fa);
+earbudR.position.set(0.40, -1.05, 0);
+earbudR.rotation.z = -0.15;
+phone.add(earbudR);
+register(earbudR, [3.5, 2.7, 1.3], [-0.5, -1.4, -0.4], { scaleIn: true });
+
+/* ---------- 5.7 Power bank ---------- */
+function makePowerBank(){
+  const g = new THREE.Group();
+  const shell = new THREE.Mesh(
+    new RoundedBoxGeometry(1.35, 2.45, 0.52, 4, 0.18),
+    matMetal(0x1b1e29, 0.85, 0.28)
+  );
+  g.add(shell);
+
+  for (let i = 0; i < 4; i++){
+    const dot = new THREE.Mesh(
+      new THREE.CircleGeometry(0.058, 14),
+      new THREE.MeshBasicMaterial({ color: 0x22d3ee })
+    );
+    dot.position.set(-0.36 + i * 0.24, -0.98, 0.27);
+    g.add(dot);
+  }
+
+  const port = new THREE.Mesh(
+    new THREE.BoxGeometry(0.5, 0.11, 0.06),
+    new THREE.MeshStandardMaterial({ color: 0x0a0b10 })
+  );
+  port.position.set(0, 1.24, 0.24);
+  g.add(port);
+  return g;
+}
+const powerBank = makePowerBank();
+powerBank.position.set(0.55, 0.85, 0);
+phone.add(powerBank);
+register(powerBank, [3.5, -1.5, 1.05], [0.35, -0.6, -0.3], { scaleIn: true, label: 'Power Bank' });
+
+/* ---------- 5.8 Wall charger ---------- */
+function makeCharger(){
+  const g = new THREE.Group();
+  const shell = new THREE.Mesh(
+    new RoundedBoxGeometry(0.92, 0.92, 0.92, 4, 0.17),
+    matSoft(0xeef1f8, 0.2, 0.42)
+  );
+  g.add(shell);
+
+  const prongMat = matMetal(0xc9ced8, 1, 0.22);
+  [-0.22, 0.22].forEach(x => {
+    const p = new THREE.Mesh(new THREE.BoxGeometry(0.10, 0.30, 0.07), prongMat);
+    p.position.set(x, 0.56, 0);
+    g.add(p);
+  });
+
+  const port = new THREE.Mesh(
+    new THREE.BoxGeometry(0.38, 0.11, 0.07),
+    new THREE.MeshStandardMaterial({ color: 0x12141a })
+  );
+  port.position.set(0, -0.47, 0.22);
+  g.add(port);
+  return g;
+}
+const charger = makeCharger();
+charger.position.set(-0.55, 0.85, 0);
+phone.add(charger);
+register(charger, [-3.5, -2.7, 0.95], [-0.4, 0.9, 0.5], { scaleIn: true, label: 'Fast Charger' });
+
+/* ---------- 5.9 Charging cable (ring) ---------- */
+const cable = new THREE.Mesh(
+  new THREE.TorusGeometry(0.78, 0.078, 14, 64),
+  new THREE.MeshStandardMaterial({ color: 0xe8ecf5, metalness: 0.2, roughness: 0.45 })
+);
+cable.rotation.x = 1.15;
+cable.position.set(0, 0.15, 0);
+phone.add(cable);
+
+const cablePlug = new THREE.Mesh(
+  new THREE.BoxGeometry(0.18, 0.34, 0.16),
+  matMetal(0xb9c0cf, 1, 0.24)
+);
+cablePlug.position.set(0.78, 0.15, 0);
+cable.add(cablePlug);
+
+register(cable, [2.7, -2.9, -1.1], [0.9, 0.7, 1.3], { scaleIn: true, label: 'Cable' });
+
+/* ============================================================
+   6. STARFIELD
+   ============================================================ */
+const STAR_COUNT = 420;
+const starGeo = new THREE.BufferGeometry();
+const starPos = new Float32Array(STAR_COUNT * 3);
+for (let i = 0; i < STAR_COUNT; i++){
+  starPos[i * 3]     = (Math.random() - 0.5) * 46;
+  starPos[i * 3 + 1] = (Math.random() - 0.5) * 34;
+  starPos[i * 3 + 2] = (Math.random() - 0.5) * 34 - 6;
+}
+starGeo.setAttribute('position', new THREE.BufferAttribute(starPos, 3));
+const stars = new THREE.Points(starGeo, new THREE.PointsMaterial({
+  color: 0x93a7ff, size: 0.075, transparent: true, opacity: 0.75, depthWrite: false, sizeAttenuation: true
+}));
+scene.add(stars);
+
+/* ============================================================
+   7. LABELS
+   ============================================================ */
+const labelLayer = document.getElementById('labels');
+PARTS.forEach(obj => {
+  if (!obj.userData.label) return;
+  const el = document.createElement('div');
+  el.className = 'part-label';
+  el.textContent = obj.userData.label;
+  labelLayer.appendChild(el);
+  obj.userData.labelEl = el;
+});
+
+const _v = new THREE.Vector3();
+
+function updateLabels(){
+  const op = Math.min(1, Math.max(0, (progress - 0.32) / 0.34));
+  PARTS.forEach(obj => {
+    const el = obj.userData.labelEl;
+    if (!el) return;
+    el.style.opacity = op;
+    if (op <= 0.02) return;
+
+    obj.getWorldPosition(_v);
+    _v.project(camera);
+
+    const x = (_v.x * 0.5 + 0.5) * window.innerWidth;
+    const y = (-_v.y * 0.5 + 0.5) * window.innerHeight;
+
+    el.style.transform = `translate(-50%,-50%) translate(${x}px, ${y}px)`;
+  });
+}
+
+/* ============================================================
+   8. RESPONSIVE LAYOUT
+   ============================================================ */
+function resize(){
+  const w = window.innerWidth;
+  const h = window.innerHeight;
+  const aspect = w / h;
+  const isMobile = aspect < 0.95;
+
+  renderer.setSize(w, h, false);
+  camera.aspect = aspect;
+  camera.position.z = isMobile ? 22 : 15;
+  camera.updateProjectionMatrix();
+
+  world.position.x = isMobile ? 0 : 2.45;
+  world.scale.setScalar(isMobile ? 0.78 : 1);
+}
+window.addEventListener('resize', resize);
+resize();
+
+/* ============================================================
+   9. SCROLL → EXPLODE PROGRESS
+   ============================================================ */
+const heroWrap  = document.getElementById('heroWrap');
+const heroCopy  = document.getElementById('heroCopy');
+const scrollHint = document.getElementById('scrollHint');
+
+let heroScrollable = 1;
+let target   = 0;
+let progress = 1;
+
+function measure(){
+  heroScrollable = Math.max(1, heroWrap.offsetHeight - window.innerHeight);
+}
+window.addEventListener('resize', measure);
+measure();
+
+function onScroll(){
+  const top = heroWrap.getBoundingClientRect().top;
+  const scrolled = Math.min(Math.max(-top, 0), heroScrollable);
+  target = scrolled / heroScrollable;
+
+  const fade = Math.min(1, Math.max(0, 1 - target * 1.9));
+  heroCopy.style.opacity = fade;
+  heroCopy.style.transform = `translateY(${target * -70}px)`;
+  heroCopy.style.pointerEvents = fade < 0.25 ? 'none' : 'auto';
+
+  scrollHint.style.opacity = Math.max(0, 1 - target * 4);
+}
+window.addEventListener('scroll', onScroll, { passive: true });
+onScroll();
+
+/* ============================================================
+   10. MOUSE PARALLAX
+   ============================================================ */
+let mx = 0, my = 0, smx = 0, smy = 0;
+window.addEventListener('pointermove', e => {
+  mx = (e.clientX / window.innerWidth  - 0.5) * 2;
+  my = (e.clientY / window.innerHeight - 0.5) * 2;
+}, { passive: true });
+
+/* ============================================================
+   11. ANIMATION LOOP
+   ============================================================ */
+const clock = new THREE.Clock();
+const easeInOut = t => t < 0.5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2;
+const clamp01 = v => Math.min(1, Math.max(0, v));
+
+function animate(){
+  requestAnimationFrame(animate);
+
+  const dt = Math.min(clock.getDelta(), 0.05);
+  const t  = clock.elapsedTime;
+
+  progress += (target - progress) * Math.min(1, dt * 3.4);
+
+  smx += (mx - smx) * 0.055;
+  smy += (my - smy) * 0.055;
+
+  const e = easeInOut(clamp01(progress));
+
+  PARTS.forEach(obj => {
+    const u = obj.userData;
+
+    obj.position.set(
+      u.base.x + u.offset.x * e,
+      u.base.y + u.offset.y * e + Math.sin(t * 1.1 + u.floatSeed) * 0.10 * e,
+      u.base.z + u.offset.z * e
+    );
+
+    obj.rotation.set(
+      u.baseRot.x + u.spin.x * e,
+      u.baseRot.y + u.spin.y * e + Math.sin(t * 0.5 + u.floatSeed) * 0.12 * e,
+      u.baseRot.z + u.spin.z * e
+    );
+
+    if (u.scaleIn){
+      const s  = clamp01((progress - 0.04) / 0.38);
+      const es = s * s * (3 - 2 * s);
+      obj.scale.setScalar(u.baseScale * es);
+      obj.visible = es > 0.001;
+    }
+  });
+
+  phone.rotation.y = Math.sin(t * 0.35) * 0.20 + smx * 0.36;
+  phone.rotation.x = Math.sin(t * 0.50) * 0.06 - smy * 0.22;
+  phone.rotation.z = Math.sin(t * 0.25) * 0.035;
+
+  world.position.y = Math.sin(t * 0.7) * 0.10;
+  world.rotation.y = smx * 0.10;
+
+  stars.rotation.y = t * 0.018;
+  stars.rotation.x = Math.sin(t * 0.1) * 0.05;
+
+  warmLight.position.x = Math.sin(t * 0.5) * 7;
+  warmLight.position.y = Math.cos(t * 0.4) * 5;
+
+  renderer.render(scene, camera);
+  updateLabels();
+}
+animate();
+
+/* ============================================================
+   12. PAGE INTERACTIONS
+   ============================================================ */
+document.getElementById('year').textContent = new Date().getFullYear();
+
+const track = document.getElementById('marqueeTrack');
+track.innerHTML += track.innerHTML;
+
+document.getElementById('shareBtn')?.addEventListener('click', async () => {
+  const data = {
+    title: 'Xcessories Hub — Cell Phone Accessories, Lahore',
+    text: 'Premium mobile accessories in Gulberg, Lahore. Rated 4.6 ★ (526 reviews).',
+    url: location.href
+  };
+  try {
+    if (navigator.share) await navigator.share(data);
+    else {
+      await navigator.clipboard.writeText(location.href);
+      alert('Link copied to clipboard!');
+    }
+  } catch (err) { /* cancelled */ }
+});
+
+const revealEls = document.querySelectorAll('.reveal');
+const io = new IntersectionObserver((entries) => {
+  entries.forEach((entry, i) => {
+    if (entry.isIntersecting){
+      setTimeout(() => entry.target.classList.add('in'), i * 70);
+      io.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.12, rootMargin: '0px 0px -60px 0px' });
+revealEls.forEach(el => io.observe(el));
+
+const barsIO = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting){
+      entry.target.querySelectorAll('.bar-fill').forEach((bar, i) => {
+        setTimeout(() => { bar.style.width = bar.dataset.w; }, i * 110);
+      });
+      barsIO.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.3 });
+document.querySelectorAll('.rev-summary').forEach(el => barsIO.observe(el));
+
+document.querySelectorAll('.card').forEach(card => {
+  card.addEventListener('pointermove', e => {
+    const r = card.getBoundingClientRect();
+    card.style.setProperty('--mx', `${e.clientX - r.left}px`);
+    card.style.setProperty('--my', `${e.clientY - r.top}px`);
+  });
+});
+
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+  a.addEventListener('click', e => {
+    const id = a.getAttribute('href');
+    if (id.length < 2) return;
+    const el = document.querySelector(id);
+    if (!el) return;
+    e.preventDefault();
+    const y = el.getBoundingClientRect().top + window.scrollY - 70;
+    window.scrollTo({ top: y, behavior: 'smooth' });
+  });
+});
+</script>
+</body>
+</html>

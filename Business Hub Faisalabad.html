@@ -1,0 +1,2185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Business Hub Faisalabad — Premium Business Center · Sargodha Road</title>
+<meta name="description" content="Business Hub Faisalabad — modern business center on Sargodha Rd, Muslim Town 2. Rated 4.7 ★ (28 reviews). Workspaces, networking, investment." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+<style>
+/* ============================================================
+   ROOT — LIGHT THEME · NAVY PALETTE
+   ============================================================ */
+:root{
+  --bg:#f8f6f1;
+  --bg-2:#ffffff;
+  --surface:#ffffff;
+  --surface-2:#f5f3ee;
+  --line:rgba(15,32,58,.09);
+  --line-2:rgba(15,32,58,.16);
+  --text:#0f1e38;
+  --muted:#5a6a85;
+  --muted-2:#8a95a8;
+
+  /* NAVY palette */
+  --navy:#0f2942;
+  --navy-2:#1a3a5c;
+  --navy-3:#244a72;
+  --navy-soft:#e6ecf4;
+  --navy-tint:#d4dde9;
+
+  --brand:var(--navy);
+  --brand-2:var(--navy-3);
+
+  --gold:#c89a3f;
+  --gold-2:#e0b05a;
+  --green:#0e9f6e;
+  --red:#dc2626;
+
+  --radius:20px;
+  --shadow-sm:0 2px 6px rgba(15,32,58,.06);
+  --shadow:0 20px 50px -20px rgba(15,32,58,.22);
+  --shadow-lg:0 40px 90px -30px rgba(15,42,66,.32);
+  --font-display:'Space Grotesk', 'Inter', sans-serif;
+}
+
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+
+body{
+  background:var(--bg);
+  color:var(--text);
+  font-family:'Inter',system-ui,-apple-system,'Segoe UI',sans-serif;
+  line-height:1.65;
+  overflow-x:hidden;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+
+img,iframe,canvas,svg{display:block;max-width:100%;}
+a{color:inherit;text-decoration:none;}
+button{font:inherit;color:inherit;background:none;border:none;cursor:pointer;}
+::selection{background:var(--navy);color:#fff;}
+
+::-webkit-scrollbar{width:10px;}
+::-webkit-scrollbar-track{background:#ece8e0;}
+::-webkit-scrollbar-thumb{background:linear-gradient(180deg,#1a3a5c,#0f2942);border-radius:10px;}
+
+/* ============================================================
+   SVG ICON BASELINE
+   ============================================================ */
+.ic{
+  width:1em;height:1em;flex:none;
+  stroke:currentColor;fill:none;
+  stroke-width:2;stroke-linecap:round;stroke-linejoin:round;
+  vertical-align:middle;
+}
+.ic-fill{fill:currentColor;stroke:none;}
+.ic-16{width:16px;height:16px;}
+.ic-18{width:18px;height:18px;}
+.ic-20{width:20px;height:20px;}
+.ic-22{width:22px;height:22px;}
+.ic-24{width:24px;height:24px;}
+.ic-26{width:26px;height:26px;}
+
+/* ============================================================
+   BACKGROUND DECOR — warm neutrals + navy glows
+   ============================================================ */
+.bg-glow{position:fixed;inset:0;z-index:0;pointer-events:none;overflow:hidden;}
+.bg-glow::before,.bg-glow::after{
+  content:'';position:absolute;width:75vmax;height:75vmax;border-radius:50%;
+  filter:blur(130px);opacity:.32;
+}
+.bg-glow::before{background:radial-gradient(circle,#1a3a5c 0%,transparent 62%);top:-32vmax;left:-18vmax;}
+.bg-glow::after{background:radial-gradient(circle,#244a72 0%,transparent 62%);bottom:-34vmax;right:-20vmax;}
+.bg-glow .warm{
+  position:absolute;width:55vmax;height:55vmax;border-radius:50%;
+  background:radial-gradient(circle,#e0b05a 0%,transparent 62%);
+  filter:blur(140px);opacity:.28;top:35%;left:48%;
+}
+.bg-grid{
+  position:fixed;inset:0;z-index:0;pointer-events:none;opacity:.7;
+  background-image:linear-gradient(rgba(15,32,58,.045) 1px,transparent 1px),
+                   linear-gradient(90deg,rgba(15,32,58,.045) 1px,transparent 1px);
+  background-size:72px 72px;
+  mask-image:radial-gradient(ellipse 90% 60% at 50% 40%,#000 20%,transparent 82%);
+  -webkit-mask-image:radial-gradient(ellipse 90% 60% at 50% 40%,#000 20%,transparent 82%);
+}
+
+/* ============================================================
+   NAV
+   ============================================================ */
+.nav{
+  position:fixed;top:0;left:0;right:0;z-index:60;
+  display:flex;align-items:center;justify-content:space-between;gap:20px;
+  padding:14px clamp(16px,5vw,64px);
+  background:rgba(248,246,241,.82);
+  backdrop-filter:blur(20px) saturate(180%);
+  -webkit-backdrop-filter:blur(20px) saturate(180%);
+  border-bottom:1px solid var(--line);
+}
+.brand{display:flex;align-items:center;gap:12px;font-family:var(--font-display);font-weight:700;letter-spacing:-.02em;}
+.brand-mark{
+  width:40px;height:40px;border-radius:12px;flex:none;
+  background:linear-gradient(140deg,var(--navy),var(--navy-3));
+  display:grid;place-items:center;color:#fff;
+  box-shadow:0 8px 22px -6px rgba(15,42,66,.55);
+}
+.brand-txt{display:flex;flex-direction:column;line-height:1.1;}
+.brand-txt b{font-size:15px;font-weight:700;color:var(--navy);}
+.brand-txt span{font-size:10.5px;color:var(--muted-2);letter-spacing:.14em;text-transform:uppercase;font-weight:600;}
+
+.nav-links{display:flex;align-items:center;gap:4px;}
+.nav-links a{
+  padding:8px 14px;border-radius:10px;font-size:13.5px;font-weight:500;color:var(--muted);
+  transition:.25s;
+}
+.nav-links a:hover{color:var(--navy);background:var(--navy-soft);}
+
+.nav-cta{
+  display:inline-flex;align-items:center;gap:9px;
+  padding:10px 18px;border-radius:12px;font-size:13.5px;font-weight:600;
+  background:linear-gradient(135deg,var(--navy),var(--navy-3));
+  color:#fff;box-shadow:0 10px 24px -10px rgba(15,42,66,.9);
+  transition:.3s;
+}
+.nav-cta:hover{transform:translateY(-2px);box-shadow:0 16px 34px -12px rgba(15,42,66,1);}
+
+@media(max-width:900px){.nav-links{display:none;}}
+
+/* ============================================================
+   HERO 3D
+   ============================================================ */
+.hero-wrap{position:relative;height:250vh;z-index:1;}
+.hero-sticky{position:sticky;top:0;height:100vh;overflow:hidden;}
+#scene{position:absolute;inset:0;width:100%;height:100%;}
+
+.hero-sticky::after{
+  content:'';position:absolute;inset:0;pointer-events:none;
+  background:radial-gradient(ellipse 75% 75% at 50% 50%,transparent 48%,rgba(248,246,241,.9) 100%);
+}
+
+.labels{position:absolute;inset:0;pointer-events:none;z-index:4;}
+.part-label{
+  position:absolute;left:0;top:0;white-space:nowrap;
+  padding:5px 12px;border-radius:100px;
+  font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;
+  color:var(--navy);
+  background:rgba(255,255,255,.95);
+  border:1px solid rgba(15,42,66,.32);
+  box-shadow:0 6px 20px -6px rgba(15,42,66,.4), inset 0 0 0 1px rgba(255,255,255,.6);
+  backdrop-filter:blur(10px);
+  opacity:0;transition:opacity .35s ease;
+}
+.part-label::before{
+  content:'';position:absolute;left:-4px;top:50%;width:7px;height:7px;border-radius:50%;
+  background:var(--gold);transform:translateY(-50%);
+  box-shadow:0 0 10px var(--gold-2);
+}
+
+.hero-copy-wrap{
+  position:absolute;inset:0;z-index:5;display:flex;align-items:center;
+  padding:0 clamp(18px,6vw,90px);pointer-events:none;
+}
+.hero-copy{max-width:570px;pointer-events:auto;will-change:opacity,transform;}
+
+.pill{
+  display:inline-flex;align-items:center;gap:9px;
+  padding:7px 15px 7px 9px;border-radius:100px;
+  background:#fff;border:1px solid var(--line-2);
+  font-size:12.5px;font-weight:500;color:var(--muted);
+  box-shadow:var(--shadow-sm);
+  margin-bottom:26px;
+}
+.pill .dot{width:7px;height:7px;border-radius:50%;background:var(--green);box-shadow:0 0 0 3px rgba(14,159,110,.18);animation:pulse 2s infinite;}
+@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.5;transform:scale(.85)}}
+.pill b{color:var(--navy);font-weight:700;}
+.pill .star-ic{color:var(--gold);width:14px;height:14px;}
+
+h1.hero-title{
+  font-family:var(--font-display);
+  font-size:clamp(2.5rem,6.8vw,5rem);
+  line-height:1.0;font-weight:700;letter-spacing:-.035em;
+  margin-bottom:22px;color:var(--navy);
+}
+h1.hero-title .grad{
+  background:linear-gradient(100deg,#0f2942 0%,#244a72 55%,#c89a3f 100%);
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+  background-size:200% auto;
+  animation:shine 7s linear infinite;
+}
+@keyframes shine{to{background-position:200% center;}}
+
+.hero-sub{
+  font-size:clamp(14.5px,1.6vw,17px);color:var(--muted);max-width:480px;
+  margin-bottom:34px;line-height:1.7;
+}
+
+.hero-actions{display:flex;flex-wrap:wrap;gap:14px;}
+.btn{
+  display:inline-flex;align-items:center;gap:10px;
+  padding:14px 26px;border-radius:14px;
+  font-size:14.5px;font-weight:600;letter-spacing:-.01em;
+  transition:.3s cubic-bezier(.2,.8,.2,1);
+}
+.btn .ic{width:18px;height:18px;}
+.btn-primary{
+  background:linear-gradient(135deg,var(--navy),var(--navy-3));
+  color:#fff;box-shadow:0 16px 34px -14px rgba(15,42,66,.95);
+}
+.btn-primary:hover{transform:translateY(-3px);box-shadow:0 22px 44px -14px rgba(15,42,66,1);}
+.btn-ghost{
+  background:#fff;color:var(--navy);border:1px solid var(--line-2);
+  box-shadow:var(--shadow-sm);
+}
+.btn-ghost:hover{background:var(--navy-soft);transform:translateY(-3px);border-color:var(--navy);}
+
+.scroll-hint{
+  position:absolute;left:50%;bottom:34px;transform:translateX(-50%);
+  z-index:6;display:flex;flex-direction:column;align-items:center;gap:9px;
+  font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--muted-2);
+  font-weight:600;
+  transition:opacity .4s;
+}
+.scroll-hint .bar{
+  width:1px;height:44px;background:linear-gradient(180deg,transparent,var(--navy),transparent);
+  animation:down 1.9s ease-in-out infinite;
+}
+@keyframes down{0%{transform:scaleY(.2);opacity:.2}50%{transform:scaleY(1);opacity:1}100%{transform:scaleY(.2);opacity:.2}}
+
+@media(max-width:760px){
+  .hero-copy-wrap{align-items:flex-end;padding-bottom:90px;}
+  .hero-sub{font-size:14px;}
+}
+
+/* ============================================================
+   MARQUEE
+   ============================================================ */
+.marquee{
+  position:relative;z-index:2;overflow:hidden;
+  border-top:1px solid var(--line);border-bottom:1px solid var(--line);
+  background:#ffffff;
+  padding:20px 0;
+}
+.marquee-track{display:flex;gap:56px;width:max-content;animation:marq 34s linear infinite;}
+.marquee:hover .marquee-track{animation-play-state:paused;}
+@keyframes marq{to{transform:translateX(-50%);}}
+.marquee-item{
+  display:flex;align-items:center;gap:14px;flex:none;
+  font-family:var(--font-display);font-size:14px;font-weight:600;
+  letter-spacing:.12em;text-transform:uppercase;color:var(--muted-2);
+  transition:.3s;
+}
+.marquee-item:hover{color:var(--navy);}
+.marquee-item .sep{color:var(--gold);}
+
+/* ============================================================
+   SECTIONS
+   ============================================================ */
+section.block{position:relative;z-index:2;padding:clamp(72px,10vw,130px) clamp(18px,6vw,90px);scroll-margin-top:80px;}
+
+.sec-head{max-width:780px;margin-bottom:56px;}
+.sec-kicker{
+  display:inline-flex;align-items:center;gap:9px;
+  font-size:11.5px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;
+  color:var(--navy);margin-bottom:16px;
+}
+.sec-kicker::before{content:'';width:26px;height:1.5px;background:linear-gradient(90deg,var(--navy),var(--gold));border-radius:2px;}
+h2.sec-title{
+  font-family:var(--font-display);
+  font-size:clamp(1.9rem,4vw,3.1rem);
+  line-height:1.08;font-weight:700;letter-spacing:-.03em;margin-bottom:16px;
+  color:var(--navy);
+}
+.sec-desc{color:var(--muted);font-size:clamp(14.5px,1.5vw,16.5px);max-width:620px;}
+
+/* ---------- OVERVIEW CARDS ---------- */
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(255px,1fr));gap:20px;}
+.card{
+  position:relative;overflow:hidden;
+  padding:30px 26px 32px;border-radius:var(--radius);
+  background:#fff;
+  border:1px solid var(--line);
+  box-shadow:var(--shadow-sm);
+  transition:.45s cubic-bezier(.2,.8,.2,1);
+}
+.card::after{
+  content:'';position:absolute;inset:0;border-radius:var(--radius);pointer-events:none;
+  background:radial-gradient(400px circle at var(--mx,50%) var(--my,0%),rgba(15,42,66,.10),transparent 65%);
+  opacity:0;transition:opacity .45s;
+}
+.card:hover{transform:translateY(-7px);border-color:rgba(15,42,66,.3);box-shadow:var(--shadow-lg);}
+.card:hover::after{opacity:1;}
+.card-ico{
+  width:52px;height:52px;border-radius:15px;display:grid;place-items:center;
+  margin-bottom:20px;color:var(--navy);
+  background:linear-gradient(140deg,var(--navy-soft),#eef2f7);
+  border:1px solid rgba(15,42,66,.18);
+}
+.card-ico svg{width:26px;height:26px;}
+.card h3{font-family:var(--font-display);font-size:18px;font-weight:600;margin-bottom:9px;letter-spacing:-.01em;color:var(--navy);}
+.card p{font-size:14px;color:var(--muted);line-height:1.7;}
+
+/* ---------- STATS STRIP ---------- */
+.stats{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:1px;
+  margin-top:56px;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;
+  background:var(--line);box-shadow:var(--shadow-sm);
+}
+.stat{background:#fff;padding:30px 24px;text-align:center;}
+.stat b{
+  display:block;font-family:var(--font-display);font-size:clamp(1.7rem,3.4vw,2.5rem);
+  font-weight:700;letter-spacing:-.03em;
+  background:linear-gradient(120deg,#0f2942,#244a72);
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.stat span{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted-2);font-weight:700;}
+
+/* ---------- REVIEW TAGS ---------- */
+.tag-row{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:40px;}
+.tag{
+  display:inline-flex;align-items:center;gap:8px;
+  padding:9px 16px;border-radius:100px;
+  background:#fff;border:1px solid var(--line-2);
+  font-size:13px;font-weight:600;color:var(--muted);
+  box-shadow:var(--shadow-sm);
+  transition:.28s;
+}
+.tag b{
+  font-size:11px;font-weight:700;color:var(--navy);
+  background:var(--navy-soft);padding:1px 8px;border-radius:100px;
+}
+.tag:hover{border-color:var(--navy);color:var(--navy);transform:translateY(-2px);}
+
+/* ---------- REVIEWS ---------- */
+.rev-layout{display:grid;grid-template-columns:340px 1fr;gap:28px;align-items:start;}
+@media(max-width:900px){.rev-layout{grid-template-columns:1fr;}}
+
+.rev-summary{
+  padding:32px 28px;border-radius:var(--radius);
+  background:#fff;
+  border:1px solid var(--line);
+  box-shadow:var(--shadow);
+  text-align:center;
+  position:sticky;top:100px;
+}
+@media(max-width:900px){.rev-summary{position:static;}}
+.rev-score{
+  font-family:var(--font-display);font-size:4.4rem;font-weight:700;line-height:1;
+  letter-spacing:-.05em;
+  background:linear-gradient(120deg,#c89a3f,#e0b05a);
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.rev-stars{display:flex;justify-content:center;gap:3px;margin:12px 0 8px;color:var(--gold);}
+.rev-stars svg{width:19px;height:19px;}
+.rev-count{font-size:13.5px;color:var(--muted);}
+.rev-count b{color:var(--navy);}
+
+.bars{margin-top:26px;display:flex;flex-direction:column;gap:9px;}
+.bar-row{display:flex;align-items:center;gap:11px;font-size:12px;color:var(--muted);}
+.bar-row .lbl{width:26px;text-align:right;font-weight:600;color:var(--muted);}
+.bar-track{flex:1;height:7px;border-radius:100px;background:#ece8e0;overflow:hidden;}
+.bar-fill{height:100%;border-radius:100px;background:linear-gradient(90deg,var(--navy),var(--navy-3));width:0;transition:width 1.4s cubic-bezier(.2,.8,.2,1);}
+.bar-row .pct{width:34px;font-size:11.5px;color:var(--muted-2);text-align:right;}
+
+.rev-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:18px;}
+.rev-card{
+  padding:26px 24px;border-radius:var(--radius);
+  background:#fff;border:1px solid var(--line);
+  box-shadow:var(--shadow-sm);
+  transition:.4s;
+}
+.rev-card:hover{background:#fff;transform:translateY(-5px);border-color:rgba(15,42,66,.28);box-shadow:var(--shadow);}
+.rev-top{display:flex;align-items:center;gap:13px;margin-bottom:14px;}
+.avatar{
+  width:44px;height:44px;border-radius:50%;flex:none;display:grid;place-items:center;
+  font-weight:700;font-size:16px;color:#fff;
+  background:linear-gradient(140deg,var(--navy),var(--navy-3));
+  box-shadow:0 6px 16px -6px rgba(15,42,66,.7);
+}
+.rev-name{font-size:14px;font-weight:600;color:var(--navy);}
+.rev-meta{font-size:11.5px;color:var(--muted-2);}
+.rev-body{font-size:13.8px;color:var(--muted);line-height:1.72;}
+.rev-stars-sm{display:flex;gap:2px;color:var(--gold);margin-bottom:9px;}
+.rev-stars-sm svg{width:13px;height:13px;}
+
+/* ---------- RELATED PLACES ---------- */
+.related{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:16px;}
+.related-item{
+  display:flex;align-items:center;gap:14px;
+  padding:18px 20px;border-radius:16px;
+  background:#fff;border:1px solid var(--line);
+  box-shadow:var(--shadow-sm);
+  transition:.3s;
+}
+.related-item:hover{transform:translateY(-4px);border-color:rgba(15,42,66,.32);box-shadow:var(--shadow);}
+.related-ico{
+  width:42px;height:42px;flex:none;border-radius:12px;display:grid;place-items:center;
+  background:var(--navy-soft);color:var(--navy);
+}
+.related-ico svg{width:20px;height:20px;}
+.related-name{font-size:14px;font-weight:600;color:var(--navy);}
+.related-meta{font-size:12px;color:var(--muted-2);display:flex;align-items:center;gap:5px;}
+.related-meta svg{width:11px;height:11px;color:var(--gold);}
+
+/* ---------- ABOUT / VISIT ---------- */
+.visit-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:26px;align-items:stretch;}
+@media(max-width:960px){.visit-grid{grid-template-columns:1fr;}}
+
+.info-card{
+  padding:34px 30px;border-radius:var(--radius);
+  background:#fff;
+  border:1px solid var(--line);
+  box-shadow:var(--shadow);
+}
+.info-row{display:flex;gap:16px;padding:17px 0;border-bottom:1px solid var(--line);}
+.info-row:last-of-type{border-bottom:none;}
+.info-ico{
+  width:40px;height:40px;flex:none;border-radius:12px;display:grid;place-items:center;
+  color:var(--navy);
+  background:var(--navy-soft);
+  border:1px solid rgba(15,42,66,.16);
+}
+.info-ico svg{width:18px;height:18px;}
+.info-row .lbl{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted-2);font-weight:700;margin-bottom:4px;}
+.info-row .val{font-size:14.5px;color:var(--text);line-height:1.6;}
+.info-row .val a{color:var(--navy);font-weight:600;}
+.info-row .val a:hover{text-decoration:underline;}
+
+.status-open{display:inline-flex;align-items:center;gap:7px;color:var(--red);font-weight:600;font-size:13.5px;}
+.status-open .dot{width:7px;height:7px;border-radius:50%;background:var(--red);box-shadow:0 0 0 3px rgba(220,38,38,.15);}
+
+.action-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px;}
+.chip{
+  display:inline-flex;align-items:center;gap:8px;
+  padding:10px 17px;border-radius:100px;font-size:13px;font-weight:600;
+  background:var(--surface-2);border:1px solid var(--line-2);color:var(--navy);
+  transition:.28s;
+}
+.chip svg{width:15px;height:15px;}
+.chip:hover{background:var(--navy-soft);border-color:var(--navy);transform:translateY(-2px);}
+
+.map-card{
+  border-radius:var(--radius);overflow:hidden;border:1px solid var(--line);
+  min-height:440px;position:relative;background:#fff;
+  box-shadow:var(--shadow);
+}
+.map-card iframe{width:100%;height:100%;min-height:440px;border:0;filter:contrast(1.02) brightness(1.02);transition:filter .5s;}
+.map-card:hover iframe{filter:contrast(1.05) brightness(1.04);}
+
+/* ---------- ACCESSIBILITY STRIP ---------- */
+.access{
+  display:flex;flex-wrap:wrap;align-items:center;gap:16px;
+  margin-top:26px;padding:22px 26px;border-radius:18px;
+  background:linear-gradient(135deg,#eaf6f0,#f0faf5);
+  border:1px solid rgba(14,159,110,.25);
+}
+.access-ico{
+  width:44px;height:44px;flex:none;border-radius:12px;display:grid;place-items:center;
+  background:#fff;color:var(--green);box-shadow:var(--shadow-sm);
+}
+.access-ico svg{width:22px;height:22px;}
+.access-txt{font-size:14px;color:#065f46;font-weight:600;}
+.access-txt span{display:block;font-size:12.5px;color:var(--green);font-weight:500;}
+
+/* ---------- CTA BANNER ---------- */
+.cta-band{
+  position:relative;z-index:2;
+  margin:0 clamp(18px,6vw,90px) clamp(60px,8vw,110px);
+  padding:clamp(44px,7vw,80px) clamp(24px,5vw,70px);
+  border-radius:32px;text-align:center;overflow:hidden;
+  background:linear-gradient(140deg,#0f2942 0%,#1a3a5c 60%,#244a72 100%);
+  border:1px solid rgba(15,42,66,.5);
+  box-shadow:0 40px 100px -40px rgba(15,42,66,.7);
+}
+.cta-band::before{
+  content:'';position:absolute;inset:-50%;
+  background:conic-gradient(from 0deg,transparent,rgba(200,154,63,.18),transparent 30%);
+  animation:spin 16s linear infinite;
+}
+@keyframes spin{to{transform:rotate(360deg);}}
+.cta-band > *{position:relative;z-index:1;}
+.cta-band h2{font-family:var(--font-display);font-size:clamp(1.8rem,4vw,3rem);font-weight:700;letter-spacing:-.03em;margin-bottom:14px;color:#fff;}
+.cta-band p{color:rgba(255,255,255,.75);max-width:560px;margin:0 auto 30px;font-size:15.5px;}
+.cta-band .btn-primary{
+  background:#ffffff;color:var(--navy);
+  box-shadow:0 16px 34px -14px rgba(0,0,0,.5);
+}
+.cta-band .btn-primary:hover{box-shadow:0 22px 44px -14px rgba(0,0,0,.6);}
+.cta-band .btn-ghost{
+  background:rgba(255,255,255,.06);color:#fff;border:1px solid rgba(255,255,255,.28);
+}
+.cta-band .btn-ghost:hover{background:rgba(255,255,255,.14);border-color:rgba(255,255,255,.5);color:#fff;}
+
+/* ============================================================
+   FOOTER — NAVY with WHITE icons
+   ============================================================ */
+footer{
+  position:relative;z-index:2;
+  background:linear-gradient(180deg,#0a1f36 0%,#0f2942 100%);
+  color:#c9d3e0;
+  padding:64px clamp(18px,6vw,90px) 34px;
+  border-top:1px solid rgba(255,255,255,.06);
+}
+.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px;margin-bottom:44px;}
+@media(max-width:800px){.foot-grid{grid-template-columns:1fr;gap:30px;}}
+
+footer .brand-mark{
+  background:linear-gradient(140deg,#244a72,#1a3a5c);
+  box-shadow:0 8px 22px -6px rgba(0,0,0,.6), inset 0 1px 0 rgba(255,255,255,.08);
+  color:#fff;
+}
+footer .brand-txt b{color:#fff;}
+footer .brand-txt span{color:rgba(201,211,224,.55);}
+
+.foot-grid h4{
+  font-size:12px;letter-spacing:.18em;text-transform:uppercase;
+  color:rgba(224,176,90,.95);font-weight:700;margin-bottom:18px;
+}
+.foot-grid p{font-size:14px;color:rgba(201,211,224,.72);line-height:1.75;}
+.foot-grid ul{list-style:none;display:flex;flex-direction:column;gap:12px;}
+.foot-grid a{font-size:14px;color:rgba(201,211,224,.8);transition:.25s;}
+.foot-grid a:hover{color:#ffffff;}
+
+/* ---------- FORCE WHITE STROKE ICONS IN FOOTER ---------- */
+.foot-grid .ic-wrap svg,
+.foot-bottom .star-line svg{
+  width:15px;
+  height:15px;
+  stroke:currentColor;
+  fill:none;
+  stroke-width:2;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+  display:block;
+}
+
+/* ---------- Contact list icons ---------- */
+.foot-grid .with-ic{
+  display:inline-flex;align-items:flex-start;gap:12px;
+  font-size:14px;color:rgba(201,211,224,.85);
+}
+.foot-grid .with-ic .ic-wrap{
+  width:32px;height:32px;flex:none;border-radius:9px;display:grid;place-items:center;
+  background:linear-gradient(140deg,#1a3a5c,#244a72);
+  border:1px solid rgba(255,255,255,.12);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.08), 0 4px 12px -4px rgba(0,0,0,.5);
+  color:#ffffff;             /* <-- icons now pure white */
+  transition:.3s;
+}
+.foot-grid .with-ic:hover .ic-wrap{
+  background:linear-gradient(140deg,#244a72,#2e5a86);
+  border-color:rgba(255,255,255,.25);
+  transform:translateY(-1px);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.12), 0 8px 20px -6px rgba(0,0,0,.6);
+}
+.foot-grid .with-ic:hover{color:#ffffff;}
+
+/* ---------- Explore nav list icons ---------- */
+.foot-grid ul.nav-list li a{
+  display:inline-flex;align-items:center;gap:11px;
+  color:rgba(201,211,224,.85);
+}
+.foot-grid ul.nav-list li a .ic-wrap{
+  width:28px;height:28px;flex:none;border-radius:8px;display:grid;place-items:center;
+  background:linear-gradient(140deg,#1a3a5c,#244a72);
+  border:1px solid rgba(255,255,255,.12);
+  color:#ffffff;             /* <-- icons now pure white */
+  transition:.3s;
+}
+.foot-grid ul.nav-list li a .ic-wrap svg{width:13px;height:13px;}
+.foot-grid ul.nav-list li a:hover .ic-wrap{
+  background:linear-gradient(140deg,#244a72,#2e5a86);
+  border-color:rgba(255,255,255,.25);
+  transform:translateY(-1px);
+}
+.foot-grid ul.nav-list li a:hover{color:#ffffff;}
+
+/* ---------- Footer bottom star ---------- */
+.foot-bottom{
+  border-top:1px solid rgba(255,255,255,.08);
+  padding-top:26px;
+  display:flex;flex-wrap:wrap;gap:14px;justify-content:space-between;align-items:center;
+  font-size:12.5px;color:rgba(201,211,224,.6);
+}
+.foot-bottom .star-line{
+  display:inline-flex;align-items:center;gap:7px;
+}
+.foot-bottom .star-line svg{
+  width:13px;
+  height:13px;
+  fill:currentColor;         /* stars are filled shapes */
+  stroke:none;
+  color:#e0b05a;             /* gold star */
+}
+
+/* ---------- REVEAL ---------- */
+.reveal{opacity:0;transform:translateY(34px);transition:opacity .9s cubic-bezier(.2,.8,.2,1),transform .9s cubic-bezier(.2,.8,.2,1);}
+.reveal.in{opacity:1;transform:none;}
+
+/* ---------- MOBILE TWEAKS ---------- */
+@media(max-width:600px){
+  .stats{grid-template-columns:1fr 1fr;}
+  .cta-band{border-radius:24px;}
+  .part-label{font-size:9.5px;padding:4px 9px;}
+}
+</style>
+</head>
+
+<body>
+
+<div class="bg-glow"><div class="warm"></div></div>
+<div class="bg-grid"></div>
+
+<!-- ============================================================
+     SVG ICON SPRITE
+     ============================================================ -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-building" viewBox="0 0 24 24">
+      <rect x="4" y="2" width="16" height="20" rx="1.5"/>
+      <line x1="9" y1="6" x2="9" y2="6.01"/>
+      <line x1="15" y1="6" x2="15" y2="6.01"/>
+      <line x1="9" y1="10" x2="9" y2="10.01"/>
+      <line x1="15" y1="10" x2="15" y2="10.01"/>
+      <line x1="9" y1="14" x2="9" y2="14.01"/>
+      <line x1="15" y1="14" x2="15" y2="14.01"/>
+      <path d="M10 22v-4h4v4"/>
+    </symbol>
+
+    <symbol id="i-briefcase" viewBox="0 0 24 24">
+      <rect x="2" y="7" width="20" height="14" rx="2"/>
+      <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+    </symbol>
+
+    <symbol id="i-users" viewBox="0 0 24 24">
+      <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+      <circle cx="9" cy="7" r="4"/>
+      <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+      <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+    </symbol>
+
+    <symbol id="i-wifi" viewBox="0 0 24 24">
+      <path d="M5 12.55a11 11 0 0 1 14.08 0"/>
+      <path d="M1.42 9a16 16 0 0 1 21.16 0"/>
+      <path d="M8.53 16.11a6 6 0 0 1 6.95 0"/>
+      <line x1="12" y1="20" x2="12" y2="20.01"/>
+    </symbol>
+
+    <symbol id="i-trending" viewBox="0 0 24 24">
+      <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/>
+      <polyline points="17 6 23 6 23 12"/>
+    </symbol>
+
+    <symbol id="i-coffee" viewBox="0 0 24 24">
+      <path d="M18 8h1a4 4 0 0 1 0 8h-1"/>
+      <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4z"/>
+      <line x1="6" y1="1" x2="6" y2="4"/>
+      <line x1="10" y1="1" x2="10" y2="4"/>
+      <line x1="14" y1="1" x2="14" y2="4"/>
+    </symbol>
+
+    <symbol id="i-car" viewBox="0 0 24 24">
+      <path d="M5 17H3v-5l2-5h14l2 5v5h-2"/>
+      <circle cx="7.5" cy="17.5" r="2"/>
+      <circle cx="16.5" cy="17.5" r="2"/>
+      <line x1="5" y1="12" x2="19" y2="12"/>
+    </symbol>
+
+    <symbol id="i-map-pin" viewBox="0 0 24 24">
+      <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+      <circle cx="12" cy="10" r="3"/>
+    </symbol>
+
+    <symbol id="i-clock" viewBox="0 0 24 24">
+      <circle cx="12" cy="12" r="10"/>
+      <polyline points="12 6 12 12 16 14"/>
+    </symbol>
+
+    <symbol id="i-phone" viewBox="0 0 24 24">
+      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/>
+    </symbol>
+
+    <symbol id="i-globe" viewBox="0 0 24 24">
+      <circle cx="12" cy="12" r="10"/>
+      <line x1="2" y1="12" x2="22" y2="12"/>
+      <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+    </symbol>
+
+    <symbol id="i-compass" viewBox="0 0 24 24">
+      <circle cx="12" cy="12" r="10"/>
+      <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/>
+    </symbol>
+
+    <symbol id="i-navigation" viewBox="0 0 24 24">
+      <polygon points="3 11 22 2 13 21 11 13 3 11"/>
+    </symbol>
+
+    <symbol id="i-bookmark" viewBox="0 0 24 24">
+      <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/>
+    </symbol>
+
+    <symbol id="i-send" viewBox="0 0 24 24">
+      <line x1="22" y1="2" x2="11" y2="13"/>
+      <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+    </symbol>
+
+    <symbol id="i-share" viewBox="0 0 24 24">
+      <circle cx="18" cy="5" r="3"/>
+      <circle cx="6" cy="12" r="3"/>
+      <circle cx="18" cy="19" r="3"/>
+      <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/>
+      <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/>
+    </symbol>
+
+    <symbol id="i-star" viewBox="0 0 24 24">
+      <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+    </symbol>
+
+    <symbol id="i-external" viewBox="0 0 24 24">
+      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+      <polyline points="15 3 21 3 21 9"/>
+      <line x1="10" y1="14" x2="21" y2="3"/>
+    </symbol>
+
+    <symbol id="i-accessibility" viewBox="0 0 24 24">
+      <circle cx="12" cy="4" r="2"/>
+      <path d="M19 13v-2a7 7 0 0 0-14 0v2"/>
+      <line x1="12" y1="13" x2="12" y2="21"/>
+      <line x1="9" y1="21" x2="15" y2="21"/>
+    </symbol>
+
+    <symbol id="i-check" viewBox="0 0 24 24">
+      <polyline points="20 6 9 17 4 12"/>
+    </symbol>
+
+    <symbol id="i-sparkle" viewBox="0 0 24 24">
+      <path d="M12 2l2.5 7.5L22 12l-7.5 2.5L12 22l-2.5-7.5L2 12l7.5-2.5z" fill="currentColor" stroke="none"/>
+    </symbol>
+
+    <symbol id="i-calendar" viewBox="0 0 24 24">
+      <rect x="3" y="4" width="18" height="18" rx="2"/>
+      <line x1="16" y1="2" x2="16" y2="6"/>
+      <line x1="8" y1="2" x2="8" y2="6"/>
+      <line x1="3" y1="10" x2="21" y2="10"/>
+    </symbol>
+
+    <symbol id="i-layers" viewBox="0 0 24 24">
+      <polygon points="12 2 2 7 12 12 22 7 12 2"/>
+      <polyline points="2 17 12 22 22 17"/>
+      <polyline points="2 12 12 17 22 12"/>
+    </symbol>
+
+    <!-- extra icons for footer nav list -->
+    <symbol id="i-grid" viewBox="0 0 24 24">
+      <rect x="3" y="3" width="7" height="7" rx="1.5"/>
+      <rect x="14" y="3" width="7" height="7" rx="1.5"/>
+      <rect x="3" y="14" width="7" height="7" rx="1.5"/>
+      <rect x="14" y="14" width="7" height="7" rx="1.5"/>
+    </symbol>
+
+    <symbol id="i-message" viewBox="0 0 24 24">
+      <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+    </symbol>
+
+    <symbol id="i-info" viewBox="0 0 24 24">
+      <circle cx="12" cy="12" r="10"/>
+      <line x1="12" y1="16" x2="12" y2="12"/>
+      <line x1="12" y1="8" x2="12" y2="8.01"/>
+    </symbol>
+  </defs>
+</svg>
+
+<!-- ================= NAV ================= -->
+<header class="nav">
+  <a class="brand" href="#top">
+    <div class="brand-mark">
+      <svg class="ic ic-22" viewBox="0 0 24 24"><use href="#i-building"/></svg>
+    </div>
+    <div class="brand-txt">
+      <b>Business Hub</b>
+      <span>Faisalabad</span>
+    </div>
+  </a>
+  <nav class="nav-links">
+    <a href="#overview">Overview</a>
+    <a href="#reviews">Reviews</a>
+    <a href="#about">About</a>
+    <a href="#visit">Directions</a>
+  </nav>
+  <a class="nav-cta" href="tel:+923111786243">
+    <svg class="ic ic-16" viewBox="0 0 24 24"><use href="#i-phone"/></svg>
+    Call Now
+  </a>
+</header>
+
+<main id="top">
+
+  <!-- ================= HERO 3D ================= -->
+  <section class="hero-wrap" id="heroWrap">
+    <div class="hero-sticky">
+      <canvas id="scene"></canvas>
+      <div class="labels" id="labels"></div>
+
+      <div class="hero-copy-wrap">
+        <div class="hero-copy" id="heroCopy">
+          <div class="pill">
+            <span class="dot"></span>
+            <svg class="star-ic ic-fill" viewBox="0 0 24 24"><use href="#i-star"/></svg>
+            <b>4.7</b> · 28 reviews · Faisalabad
+          </div>
+
+          <h1 class="hero-title">
+            The heart of<br>
+            <span class="grad">Faisalabad</span><br>
+            business.
+          </h1>
+
+          <p class="hero-sub">
+            A modern landmark commercial project on Sargodha Road — luxury workspaces,
+            networking and investment opportunity. Scroll to take it apart.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#visit">
+              <svg class="ic" viewBox="0 0 24 24"><use href="#i-navigation"/></svg>
+              Get Directions
+            </a>
+            <a class="btn btn-ghost" href="tel:+923111786243">
+              <svg class="ic" viewBox="0 0 24 24"><use href="#i-phone"/></svg>
+              +92 311 1786243
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="scroll-hint" id="scrollHint">
+        <span>Scroll to explore</span>
+        <div class="bar"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= MARQUEE ================= -->
+  <div class="marquee">
+    <div class="marquee-track" id="marqueeTrack">
+      <div class="marquee-item"><span>Luxurious Environment</span><svg class="sep ic-fill" width="10" height="10" viewBox="0 0 24 24"><use href="#i-sparkle"/></svg></div>
+      <div class="marquee-item"><span>Commercial Project</span><svg class="sep ic-fill" width="10" height="10" viewBox="0 0 24 24"><use href="#i-sparkle"/></svg></div>
+      <div class="marquee-item"><span>Workspace</span><svg class="sep ic-fill" width="10" height="10" viewBox="0 0 24 24"><use href="#i-sparkle"/></svg></div>
+      <div class="marquee-item"><span>Investing</span><svg class="sep ic-fill" width="10" height="10" viewBox="0 0 24 24"><use href="#i-sparkle"/></svg></div>
+      <div class="marquee-item"><span>Wishes</span><svg class="sep ic-fill" width="10" height="10" viewBox="0 0 24 24"><use href="#i-sparkle"/></svg></div>
+      <div class="marquee-item"><span>Successful</span><svg class="sep ic-fill" width="10" height="10" viewBox="0 0 24 24"><use href="#i-sparkle"/></svg></div>
+      <div class="marquee-item"><span>Project</span><svg class="sep ic-fill" width="10" height="10" viewBox="0 0 24 24"><use href="#i-sparkle"/></svg></div>
+    </div>
+  </div>
+
+  <!-- ================= OVERVIEW ================= -->
+  <section class="block" id="overview">
+    <div class="sec-head reveal">
+      <div class="sec-kicker">Overview</div>
+      <h2 class="sec-title">A modern landmark<br>commercial project.</h2>
+      <p class="sec-desc">
+        Business Hub Faisalabad is a premium business center on Sargodha Road,
+        designed for elite professionals, investors and growing companies.
+        Fully wheelchair accessible with dedicated parking.
+      </p>
+    </div>
+
+    <div class="cards">
+      <div class="card reveal">
+        <div class="card-ico">
+          <svg class="ic" viewBox="0 0 24 24"><use href="#i-briefcase"/></svg>
+        </div>
+        <h3>Premium Workspaces</h3>
+        <p>Stylish, functional and ergonomic offices with modern furniture — built for productive, comfortable working days.</p>
+      </div>
+      <div class="card reveal">
+        <div class="card-ico">
+          <svg class="ic" viewBox="0 0 24 24"><use href="#i-users"/></svg>
+        </div>
+        <h3>Networking & Community</h3>
+        <p>Great networking opportunities with like-minded entrepreneurs, investors and professionals under one roof.</p>
+      </div>
+      <div class="card reveal">
+        <div class="card-ico">
+          <svg class="ic" viewBox="0 0 24 24"><use href="#i-trending"/></svg>
+        </div>
+        <h3>Investment Opportunity</h3>
+        <p>A successful commercial project offering genuine investment potential for elite profile holders and developers.</p>
+      </div>
+      <div class="card reveal">
+        <div class="card-ico">
+          <svg class="ic" viewBox="0 0 24 24"><use href="#i-map-pin"/></svg>
+        </div>
+        <h3>Prime Location</h3>
+        <p>Located in the heart of Faisalabad on Sargodha Road, Muslim Town 2 — an easily accessible, high-visibility address.</p>
+      </div>
+      <div class="card reveal">
+        <div class="card-ico">
+          <svg class="ic" viewBox="0 0 24 24"><use href="#i-wifi"/></svg>
+        </div>
+        <h3>Modern Facilities</h3>
+        <p>Luxurious environment with reliable connectivity, dedicated parking, and clean, well-maintained shared spaces.</p>
+      </div>
+      <div class="card reveal">
+        <div class="card-ico">
+          <svg class="ic" viewBox="0 0 24 24"><use href="#i-coffee"/></svg>
+        </div>
+        <h3>Comfort & Convenience</h3>
+        <p>Café-friendly atmosphere, welcoming staff and everything you need for productive meetings and long workdays.</p>
+      </div>
+    </div>
+
+    <div class="stats reveal">
+      <div class="stat"><b>4.7★</b><span>Google Rating</span></div>
+      <div class="stat"><b>28</b><span>Reviews</span></div>
+      <div class="stat"><b>5</b><span>Floors</span></div>
+      <div class="stat"><b>10 AM</b><span>Opens Daily</span></div>
+    </div>
+  </section>
+
+  <!-- ================= REVIEWS ================= -->
+  <section class="block" id="reviews">
+    <div class="sec-head reveal">
+      <div class="sec-kicker">Reviews</div>
+      <h2 class="sec-title">Rated 4.7 by 28 customers</h2>
+      <p class="sec-desc">
+        Real feedback from visitors, investors and professionals who have
+        experienced Business Hub Faisalabad first-hand.
+      </p>
+    </div>
+
+    <div class="tag-row reveal">
+      <span class="tag">Project <b>7</b></span>
+      <span class="tag">Workspace <b>3</b></span>
+      <span class="tag">Luxurious Environment <b>2</b></span>
+      <span class="tag">Commercial Project <b>2</b></span>
+      <span class="tag">Investing <b>2</b></span>
+      <span class="tag">Wishes <b>2</b></span>
+      <span class="tag">Successful <b>2</b></span>
+    </div>
+
+    <div class="rev-layout">
+      <div class="rev-summary reveal">
+        <div class="rev-score">4.7</div>
+        <div class="rev-stars">
+          <svg class="ic-fill" viewBox="0 0 24 24"><use href="#i-star"/></svg>
+          <svg class="ic-fill" viewBox="0 0 24 24"><use href="#i-star"/></svg>
+          <svg class="ic-fill" viewBox="0 0 24 24"><use href="#i-star"/></svg>
+          <svg class="ic-fill" viewBox="0 0 24 24"><use href="#i-star"/></svg>
+          <svg class="ic-fill" viewBox="0 0 24 24"><use href="#i-star"/></svg>
+        </div>
+        <div class="rev-count">Based on <b>28</b> Google reviews</div>
+
+        <div class="bars">
+          <div class="bar-row"><span class="lbl">5</span><div class="bar-track"><div class="bar-fill" data-w="86%"></div></div><span class="pct">86%</span></div>
+          <div class="bar-row"><span class="lbl">4</span><div class="bar-track"><div class="bar-fill" data-w="7%"></div></div><span class="pct">7%</span></div>
+          <div class="bar-row"><span class="lbl">3</span><div class="bar-track"><div class="bar-fill" data-w="4%"></div></div><span class="pct">4%</span></div>
+          <div class="bar-row"><span class="lbl">2</span><div class="bar-track"><div class="bar-fill" data-w="0%"></div></div><span class="pct">0%</span></div>
+          <div class="bar-row"><span class="lbl">1</span><div class="bar-track"><div class="bar-fill" data-w="3%"></div></div><span class="pct">3%</span></div>
+        </div>
+      </div>
+
+      <div class="rev-cards">
+
+        <div class="rev-card reveal">
+          <div class="rev-top">
+            <div class="avatar">K</div>
+            <div>
+              <div class="rev-name">K-Link's Marketing & Advertising</div>
+              <div class="rev-meta">Local Guide · 85 reviews · 17 photos · 4 months ago</div>
+            </div>
+          </div>
+          <div class="rev-stars-sm">
+            <svg class="ic-fill" viewBox="0 0 24 24"><use href="#i-star"/></svg>
+            <svg class="ic-fill" viewBox="0 0 24 24"><use href="#i-star"/></svg>
+            <svg class="ic-fill" viewBox="0 0 24 24"><use href="#i-star"/></svg>
+            <svg class="ic-fill" viewBox="0 0 24 24"><use href="#i-star"/></svg>
+            <svg class="ic-fill" viewBox="0 0 24 24"><use href="#i-star"/></svg>
+          </div>
+          <p class="rev-body">This project for elite class profile holders who invest and develop own projects over there.</p>
+        </div>
+
+        <div class="rev-card reveal">
+          <div class="rev-top">
+            <div class="avatar">E</div>
+            <div>
+              <div class="rev-name">Ehsan BHW</div>
+              <div class="rev-meta">1 review · a year ago</div>
+            </div>
+          </div>
+          <div class="rev-stars-sm">
+            <svg class="ic-fill" viewBox="0 0 24 24"><use href="#i-star"/></svg>
+            <svg class="ic-fill" viewBox="0 0 24 24"><use href="#i-star"/></svg>
+            <svg class="ic-fill" viewBox="0 0 24 24"><use href="#i-star"/></svg>
+            <svg class="ic-fill" viewBox="0 0 24 24"><use href="#i-star"/></svg>
+            <svg class="ic-fill" viewBox="0 0 24 24"><use href="#i-star"/></svg>
+          </div>
+          <p class="rev-body">5/5 Stars. Business Hub truly understands the importance of a well-designed workspace. Their furniture is not only stylish but also functional and ergonomic. The team's…</p>
+        </div>
+
+        <div class="rev-card reveal">
+          <div class="rev-top">
+            <div class="avatar">A</div>
+            <div>
+              <div class="rev-name">Adnan Ahmad</div>
+              <div class="rev-meta">1 review · 3 years ago</div>
+            </div>
+          </div>
+          <div class="rev-stars-sm">
+            <svg class="ic-fill" viewBox="0 0 24 24"><use href="#i-star"/></svg>
+            <svg class="ic-fill" viewBox="0 0 24 24"><use href="#i-star"/></svg>
+            <svg class="ic-fill" viewBox="0 0 24 24"><use href="#i-star"/></svg>
+            <svg class="ic-fill" viewBox="0 0 24 24"><use href="#i-star"/></svg>
+            <svg class="ic-fill" viewBox="0 0 24 24"><use href="#i-star"/></svg>
+          </div>
+          <p class="rev-body">Congratulations for your new business venture. I wish you all the luck so you can earn both money and respect through it!</p>
+        </div>
+
+        <div class="rev-card reveal">
+          <div class="rev-top">
+            <div class="avatar">F</div>
+            <div>
+              <div class="rev-name">Dr. Faiq Ahmad</div>
+              <div class="rev-meta">1 review · Edited 3 years ago</div>
+            </div>
+          </div>
+          <div class="rev-stars-sm">
+            <svg class="ic-fill" viewBox="0 0 24 24"><use href="#i-star"/></svg>
+            <svg class="ic-fill" viewBox="0 0 24 24"><use href="#i-star"/></svg>
+            <svg class="ic-fill" viewBox="0 0 24 24"><use href="#i-star"/></svg>
+            <svg class="ic-fill" viewBox="0 0 24 24"><use href="#i-star"/></svg>
+            <svg class="ic-fill" viewBox="0 0 24 24"><use href="#i-star"/></svg>
+          </div>
+          <p class="rev-body">I would like to extend my greetings and good wishes for this project. I think this would be one of the most successful projects at Sargodha Road.</p>
+        </div>
+
+        <div class="rev-card reveal">
+          <div class="rev-top">
+            <div class="avatar">M</div>
+            <div>
+              <div class="rev-name">Muhammad Haider Ali</div>
+              <div class="rev-meta">3 reviews · a year ago</div>
+            </div>
+          </div>
+          <div class="rev-stars-sm">
+            <svg class="ic-fill" viewBox="0 0 24 24"><use href="#i-star"/></svg>
+            <svg class="ic-fill" viewBox="0 0 24 24"><use href="#i-star"/></svg>
+            <svg class="ic-fill" viewBox="0 0 24 24"><use href="#i-star"/></svg>
+            <svg class="ic-fill" viewBox="0 0 24 24"><use href="#i-star"/></svg>
+            <svg class="ic-fill" viewBox="0 0 24 24"><use href="#i-star"/></svg>
+          </div>
+          <p class="rev-body">MashAllah, bohat acha office hai. Staff bhi bohat cooperative hai. Everything is good.</p>
+        </div>
+
+        <div class="rev-card reveal">
+          <div class="rev-top">
+            <div class="avatar">E</div>
+            <div>
+              <div class="rev-name">Eman Fatima</div>
+              <div class="rev-meta">1 review · a year ago</div>
+            </div>
+          </div>
+          <div class="rev-stars-sm">
+            <svg class="ic-fill" viewBox="0 0 24 24"><use href="#i-star"/></svg>
+            <svg class="ic-fill" viewBox="0 0 24 24"><use href="#i-star"/></svg>
+            <svg class="ic-fill" viewBox="0 0 24 24"><use href="#i-star"/></svg>
+            <svg class="ic-fill" viewBox="0 0 24 24"><use href="#i-star"/></svg>
+            <svg class="ic-fill" viewBox="0 0 24 24"><use href="#i-star"/></svg>
+          </div>
+          <p class="rev-body">Excellent workspace. Impressive service and great networking.</p>
+        </div>
+
+        <div class="rev-card reveal">
+          <div class="rev-top">
+            <div class="avatar">M</div>
+            <div>
+              <div class="rev-name">Muhammad Touheed</div>
+              <div class="rev-meta">Local Guide · 28 reviews · 9 photos · a year ago</div>
+            </div>
+          </div>
+          <div class="rev-stars-sm">
+            <svg class="ic-fill" viewBox="0 0 24 24"><use href="#i-star"/></svg>
+            <svg class="ic-fill" viewBox="0 0 24 24"><use href="#i-star"/></svg>
+            <svg class="ic-fill" viewBox="0 0 24 24"><use href="#i-star"/></svg>
+            <svg class="ic-fill" viewBox="0 0 24 24"><use href="#i-star"/></svg>
+            <svg class="ic-fill" viewBox="0 0 24 24"><use href="#i-star"/></svg>
+          </div>
+          <p class="rev-body">The heart of Faisalabad — excellent location, fully luxury environment with well-furnished offices.</p>
+        </div>
+
+        <div class="rev-card reveal">
+          <div class="rev-top">
+            <div class="avatar">S</div>
+            <div>
+              <div class="rev-name">Shahzad Khan Official</div>
+              <div class="rev-meta">2 reviews · 4 photos · 3 years ago</div>
+            </div>
+          </div>
+          <div class="rev-stars-sm">
+            <svg class="ic-fill" viewBox="0 0 24 24"><use href="#i-star"/></svg>
+            <svg class="ic-fill" viewBox="0 0 24 24"><use href="#i-star"/></svg>
+            <svg class="ic-fill" viewBox="0 0 24 24"><use href="#i-star"/></svg>
+            <svg class="ic-fill" viewBox="0 0 24 24"><use href="#i-star"/></svg>
+            <svg class="ic-fill" viewBox="0 0 24 24"><use href="#i-star"/></svg>
+          </div>
+          <p class="rev-body">It's a modern development. Amazing experience to visit here. Hats off to the team.</p>
+        </div>
+
+        <div class="rev-card reveal">
+          <div class="rev-top">
+            <div class="avatar">Z</div>
+            <div>
+              <div class="rev-name">Zubair Shafiq</div>
+              <div class="rev-meta">1 review · 3 years ago</div>
+            </div>
+          </div>
+          <div class="rev-stars-sm">
+            <svg class="ic-fill" viewBox="0 0 24 24"><use href="#i-star"/></svg>
+            <svg class="ic-fill" viewBox="0 0 24 24"><use href="#i-star"/></svg>
+            <svg class="ic-fill" viewBox="0 0 24 24"><use href="#i-star"/></svg>
+            <svg class="ic-fill" viewBox="0 0 24 24"><use href="#i-star"/></svg>
+            <svg class="ic-fill" viewBox="0 0 24 24"><use href="#i-star"/></svg>
+          </div>
+          <p class="rev-body">Business Hub, no doubt will be a successful project and great opportunity for investment.</p>
+        </div>
+
+        <div class="rev-card reveal">
+          <div class="rev-top">
+            <div class="avatar">H</div>
+            <div>
+              <div class="rev-name">Haroon Qaiser</div>
+              <div class="rev-meta">4 reviews · 4 years ago</div>
+            </div>
+          </div>
+          <div class="rev-stars-sm">
+            <svg class="ic-fill" viewBox="0 0 24 24"><use href="#i-star"/></svg>
+            <svg class="ic-fill" viewBox="0 0 24 24"><use href="#i-star"/></svg>
+            <svg class="ic-fill" viewBox="0 0 24 24"><use href="#i-star"/></svg>
+            <svg class="ic-fill" viewBox="0 0 24 24"><use href="#i-star"/></svg>
+            <svg class="ic-fill" viewBox="0 0 24 24"><use href="#i-star"/></svg>
+          </div>
+          <p class="rev-body">One of the best business squares in Faisalabad.</p>
+        </div>
+
+        <div class="rev-card reveal">
+          <div class="rev-top">
+            <div class="avatar">M</div>
+            <div>
+              <div class="rev-name">Muhammad Umar Gilani</div>
+              <div class="rev-meta">9 reviews · 4 years ago</div>
+            </div>
+          </div>
+          <div class="rev-stars-sm">
+            <svg class="ic-fill" viewBox="0 0 24 24"><use href="#i-star"/></svg>
+            <svg class="ic-fill" viewBox="0 0 24 24"><use href="#i-star"/></svg>
+            <svg class="ic-fill" viewBox="0 0 24 24"><use href="#i-star"/></svg>
+            <svg class="ic-fill" viewBox="0 0 24 24"><use href="#i-star"/></svg>
+            <svg class="ic-fill" viewBox="0 0 24 24"><use href="#i-star"/></svg>
+          </div>
+          <p class="rev-body">An innovative commercial project.</p>
+        </div>
+
+        <div class="rev-card reveal">
+          <div class="rev-top">
+            <div class="avatar">S</div>
+            <div>
+              <div class="rev-name">Sana Hameed</div>
+              <div class="rev-meta">1 review · a year ago</div>
+            </div>
+          </div>
+          <div class="rev-stars-sm">
+            <svg class="ic-fill" viewBox="0 0 24 24"><use href="#i-star"/></svg>
+            <svg class="ic-fill" viewBox="0 0 24 24"><use href="#i-star"/></svg>
+            <svg class="ic-fill" viewBox="0 0 24 24"><use href="#i-star"/></svg>
+            <svg class="ic-fill" viewBox="0 0 24 24"><use href="#i-star"/></svg>
+            <svg class="ic-fill" viewBox="0 0 24 24"><use href="#i-star"/></svg>
+          </div>
+          <p class="rev-body">It's a good workspace.</p>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="reveal" style="margin-top:28px;padding:20px 24px;border-radius:16px;background:#fff;border:1px solid var(--line);box-shadow:var(--shadow-sm);display:flex;gap:14px;align-items:flex-start;max-width:760px;">
+      <div class="info-ico" style="background:#fdecec;color:#dc2626;border-color:rgba(220,38,38,.2);">
+        <svg class="ic" viewBox="0 0 24 24"><use href="#i-phone"/></svg>
+      </div>
+      <div>
+        <div style="font-size:14px;font-weight:600;color:var(--navy);margin-bottom:4px;">We hear the feedback</div>
+        <div style="font-size:13.5px;color:var(--muted);line-height:1.7;">
+          Some earlier reviews mentioned unanswered phone calls. We've since improved our
+          customer care response — please call <a href="tel:+923111786243" style="color:var(--navy);font-weight:600;">+92 311 1786243</a>
+          during business hours (opens 10 AM) and our team will assist you.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= ABOUT / VISIT ================= -->
+  <section class="block" id="about">
+    <div class="sec-head reveal">
+      <div class="sec-kicker">About & Directions</div>
+      <h2 class="sec-title">Visit us on Sargodha Road</h2>
+      <p class="sec-desc">
+        Business Hub Faisalabad is a modern business center located in Muslim Town 2,
+        easily reachable from anywhere in the city. Wheelchair accessible parking available.
+      </p>
+    </div>
+
+    <div class="visit-grid" id="visit">
+      <div class="info-card reveal">
+        <div class="info-row">
+          <div class="info-ico">
+            <svg class="ic" viewBox="0 0 24 24"><use href="#i-map-pin"/></svg>
+          </div>
+          <div>
+            <div class="lbl">Address</div>
+            <div class="val">
+              F39H+V62 Business Hub, Sargodha Rd,<br>
+              Muslim Town 2, Faisalabad, 38000, Pakistan
+            </div>
+          </div>
+        </div>
+
+        <div class="info-row">
+          <div class="info-ico">
+            <svg class="ic" viewBox="0 0 24 24"><use href="#i-clock"/></svg>
+          </div>
+          <div>
+            <div class="lbl">Hours</div>
+            <div class="val">
+              <span class="status-open"><span class="dot"></span> Closed · Opens 10 AM</span><br>
+              <span style="color:var(--muted);font-size:13.5px;">Monday – Sunday · 10:00 AM – 8:00 PM</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="info-row">
+          <div class="info-ico">
+            <svg class="ic" viewBox="0 0 24 24"><use href="#i-phone"/></svg>
+          </div>
+          <div>
+            <div class="lbl">Phone</div>
+            <div class="val"><a href="tel:+923111786243">+92 311 1786243</a></div>
+          </div>
+        </div>
+
+        <div class="info-row">
+          <div class="info-ico">
+            <svg class="ic" viewBox="0 0 24 24"><use href="#i-compass"/></svg>
+          </div>
+          <div>
+            <div class="lbl">Plus Code</div>
+            <div class="val">F39H+V62 Faisalabad, Pakistan</div>
+          </div>
+        </div>
+
+        <div class="info-row">
+          <div class="info-ico">
+            <svg class="ic" viewBox="0 0 24 24"><use href="#i-calendar"/></svg>
+          </div>
+          <div>
+            <div class="lbl">Category</div>
+            <div class="val">Business Center · Commercial Project</div>
+          </div>
+        </div>
+
+        <div class="action-row">
+          <a class="chip" href="https://www.google.com/maps/search/?api=1&query=Business+Hub+Sargodha+Road+Muslim+Town+2+Faisalabad" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" class="ic"><use href="#i-navigation"/></svg>
+            Directions
+          </a>
+          <a class="chip" href="https://www.google.com/maps/search/?api=1&query=Business+Hub+Sargodha+Road+Muslim+Town+2+Faisalabad" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" class="ic"><use href="#i-bookmark"/></svg>
+            Save
+          </a>
+          <a class="chip" href="tel:+923111786243">
+            <svg viewBox="0 0 24 24" class="ic"><use href="#i-send"/></svg>
+            Send to phone
+          </a>
+          <button class="chip" id="shareBtn">
+            <svg viewBox="0 0 24 24" class="ic"><use href="#i-share"/></svg>
+            Share
+          </button>
+        </div>
+      </div>
+
+      <div class="map-card reveal">
+        <iframe
+          title="Business Hub Faisalabad location map"
+          src="https://maps.google.com/maps?q=Sargodha%20Road%20Muslim%20Town%202%20Faisalabad&t=&z=15&ie=UTF8&iwloc=&output=embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+
+    <div class="access reveal">
+      <div class="access-ico">
+        <svg class="ic" viewBox="0 0 24 24"><use href="#i-accessibility"/></svg>
+      </div>
+      <div>
+        <div class="access-txt">Wheelchair accessible parking lot</div>
+        <span>Accessibility feature available on-site</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PEOPLE ALSO SEARCH FOR ================= -->
+  <section class="block" style="padding-top:0;">
+    <div class="sec-head reveal">
+      <div class="sec-kicker">Nearby & Related</div>
+      <h2 class="sec-title">People also search for</h2>
+      <p class="sec-desc">Other business and workspace destinations in and around Faisalabad.</p>
+    </div>
+
+    <div class="related">
+      <div class="related-item reveal">
+        <div class="related-ico">
+          <svg class="ic" viewBox="0 0 24 24"><use href="#i-building"/></svg>
+        </div>
+        <div>
+          <div class="related-name">Business Hub Workspace</div>
+          <div class="related-meta">
+            <svg class="ic-fill" viewBox="0 0 24 24"><use href="#i-star"/></svg>
+            4.8 (412) · Coworking space
+          </div>
+        </div>
+      </div>
+
+      <div class="related-item reveal">
+        <div class="related-ico">
+          <svg class="ic" viewBox="0 0 24 24"><use href="#i-layers"/></svg>
+        </div>
+        <div>
+          <div class="related-name">Business Hub</div>
+          <div class="related-meta">No reviews · Community center</div>
+        </div>
+      </div>
+
+      <div class="related-item reveal">
+        <div class="related-ico">
+          <svg class="ic" viewBox="0 0 24 24"><use href="#i-briefcase"/></svg>
+        </div>
+        <div>
+          <div class="related-name">Space Hub</div>
+          <div class="related-meta">
+            <svg class="ic-fill" viewBox="0 0 24 24"><use href="#i-star"/></svg>
+            4.6 (23) · Coworking space
+          </div>
+        </div>
+      </div>
+
+      <div class="related-item reveal">
+        <div class="related-ico">
+          <svg class="ic" viewBox="0 0 24 24"><use href="#i-map-pin"/></svg>
+        </div>
+        <div>
+          <div class="related-name">Gutwala Commercial Hub</div>
+          <div class="related-meta">
+            <svg class="ic-fill" viewBox="0 0 24 24"><use href="#i-star"/></svg>
+            4.4 (14) · Property admin
+          </div>
+        </div>
+      </div>
+
+      <div class="related-item reveal">
+        <div class="related-ico">
+          <svg class="ic" viewBox="0 0 24 24"><use href="#i-trending"/></svg>
+        </div>
+        <div>
+          <div class="related-name">Canal Commercial Hub</div>
+          <div class="related-meta">
+            <svg class="ic-fill" viewBox="0 0 24 24"><use href="#i-star"/></svg>
+            4.7 (7) · Market
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CTA BAND ================= -->
+  <div class="cta-band reveal">
+    <h2>Ready to visit Business Hub?</h2>
+    <p>Call us to enquire about office availability, investment opportunities or to schedule a tour of the building.</p>
+    <div class="hero-actions" style="justify-content:center;">
+      <a class="btn btn-primary" href="tel:+923111786243">
+        <svg class="ic" viewBox="0 0 24 24"><use href="#i-phone"/></svg>
+        Call +92 311 1786243
+      </a>
+      <a class="btn btn-ghost" href="https://www.google.com/maps/search/?api=1&query=Business+Hub+Sargodha+Road+Muslim+Town+2+Faisalabad" target="_blank" rel="noopener">
+        <svg class="ic" viewBox="0 0 24 24"><use href="#i-navigation"/></svg>
+        Open in Maps
+      </a>
+    </div>
+  </div>
+
+</main>
+
+<!-- ================= FOOTER — NAVY THEME WITH NAVY ICONS ================= -->
+<footer>
+  <div class="foot-grid">
+    <div>
+      <a class="brand" href="#top" style="margin-bottom:18px;">
+        <div class="brand-mark">
+          <svg class="ic ic-22" viewBox="0 0 24 24"><use href="#i-building"/></svg>
+        </div>
+        <div class="brand-txt"><b>Business Hub</b><span>Faisalabad</span></div>
+      </a>
+      <p style="max-width:340px;">
+        A modern landmark commercial project on Sargodha Road, Faisalabad.
+        Premium workspaces, networking and investment opportunity.
+      </p>
+    </div>
+
+    <div>
+      <h4>Explore</h4>
+      <ul class="nav-list">
+        <li>
+          <a href="#overview">
+            <span class="ic-wrap">
+              <svg viewBox="0 0 24 24"><use href="#i-grid"/></svg>
+            </span>
+            Overview
+          </a>
+        </li>
+        <li>
+          <a href="#reviews">
+            <span class="ic-wrap">
+              <svg viewBox="0 0 24 24"><use href="#i-message"/></svg>
+            </span>
+            Reviews
+          </a>
+        </li>
+        <li>
+          <a href="#about">
+            <span class="ic-wrap">
+              <svg viewBox="0 0 24 24"><use href="#i-info"/></svg>
+            </span>
+            About
+          </a>
+        </li>
+        <li>
+          <a href="#visit">
+            <span class="ic-wrap">
+              <svg viewBox="0 0 24 24"><use href="#i-navigation"/></svg>
+            </span>
+            Directions
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div>
+      <h4>Contact</h4>
+      <ul>
+        <li>
+          <a class="with-ic" href="tel:+923111786243">
+            <span class="ic-wrap">
+              <svg viewBox="0 0 24 24"><use href="#i-phone"/></svg>
+            </span>
+            <span>+92 311 1786243</span>
+          </a>
+        </li>
+        <li>
+          <span class="with-ic">
+            <span class="ic-wrap">
+              <svg viewBox="0 0 24 24"><use href="#i-map-pin"/></svg>
+            </span>
+            <span>F39H+V62, Sargodha Rd, Muslim Town 2, Faisalabad, 38000</span>
+          </span>
+        </li>
+        <li>
+          <span class="with-ic">
+            <span class="ic-wrap">
+              <svg viewBox="0 0 24 24"><use href="#i-clock"/></svg>
+            </span>
+            <span>Opens 10:00 AM daily</span>
+          </span>
+        </li>
+        <li>
+          <span class="with-ic">
+            <span class="ic-wrap">
+              <svg viewBox="0 0 24 24"><use href="#i-compass"/></svg>
+            </span>
+            <span>Plus Code: F39H+V62</span>
+          </span>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="foot-bottom">
+    <span>© <span id="year"></span> Business Hub Faisalabad. All rights reserved.</span>
+    <span class="star-line">
+      <svg class="ic-fill" viewBox="0 0 24 24"><use href="#i-star"/></svg>
+      Rated 4.7 · 28 Google reviews · Faisalabad, Pakistan
+    </span>
+  </div>
+</footer>
+
+<!-- ============================================================
+     THREE.JS IMPORT MAP
+     ============================================================ -->
+<script type="importmap">
+{
+  "imports": {
+    "three": "https://unpkg.com/three@0.161.0/build/three.module.js",
+    "three/addons/": "https://unpkg.com/three@0.161.0/examples/jsm/"
+  }
+}
+</script>
+
+<script type="module">
+import * as THREE from 'three';
+import { RoundedBoxGeometry } from 'three/addons/geometries/RoundedBoxGeometry.js';
+
+/* ============================================================
+   1. RENDERER / SCENE / CAMERA
+   ============================================================ */
+const canvas   = document.getElementById('scene');
+const renderer = new THREE.WebGLRenderer({ canvas, antialias:true, alpha:true });
+renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2));
+renderer.toneMapping = THREE.ACESFilmicToneMapping;
+renderer.toneMappingExposure = 1.05;
+renderer.outputColorSpace = THREE.SRGBColorSpace;
+
+const scene  = new THREE.Scene();
+const camera = new THREE.PerspectiveCamera(38, 1, 0.1, 300);
+camera.position.set(0, 3.2, 15.5);
+camera.lookAt(0, 0.4, 0);
+
+const world = new THREE.Group();
+scene.add(world);
+
+const building = new THREE.Group();
+building.position.y = -2.3;
+world.add(building);
+
+/* ============================================================
+   2. LIGHTS (warm neutral, navy-friendly)
+   ============================================================ */
+scene.add(new THREE.HemisphereLight(0xffffff, 0xd8dbe2, 1.9));
+
+const keyLight = new THREE.DirectionalLight(0xffffff, 2.2);
+keyLight.position.set(7, 11, 9);
+scene.add(keyLight);
+
+const fillLight = new THREE.DirectionalLight(0xa8c0e0, 1.4);
+fillLight.position.set(-9, 2, 6);
+scene.add(fillLight);
+
+const rimLight = new THREE.DirectionalLight(0xc89a3f, 1.3);
+rimLight.position.set(-8, -4, -8);
+scene.add(rimLight);
+
+const warmLight = new THREE.PointLight(0xe0b05a, 22, 30);
+warmLight.position.set(6, 5, 5);
+scene.add(warmLight);
+
+/* ============================================================
+   3. MATERIAL HELPERS
+   ============================================================ */
+const matConcrete = (color = 0xe4e0d8, rough = 0.72) =>
+  new THREE.MeshStandardMaterial({ color, metalness: 0.06, roughness: rough });
+
+const matGlass = (color = 0x3d5f86) =>
+  new THREE.MeshStandardMaterial({
+    color, metalness: 0.5, roughness: 0.12,
+    transparent: true, opacity: 0.72
+  });
+
+const matAccent = (color) =>
+  new THREE.MeshStandardMaterial({ color, metalness: 0.55, roughness: 0.28 });
+
+const matMetal = (color, metalness = 0.9, roughness = 0.28) =>
+  new THREE.MeshStandardMaterial({ color, metalness, roughness });
+
+/* ============================================================
+   4. BUILDING PARTS
+   ============================================================ */
+const PARTS = [];
+
+function register(obj, offset, spin, opts = {}){
+  obj.userData.base      = obj.position.clone();
+  obj.userData.baseRot   = obj.rotation.clone();
+  obj.userData.baseScale = obj.scale.x;
+  obj.userData.offset    = new THREE.Vector3(offset[0], offset[1], offset[2]);
+  obj.userData.spin      = new THREE.Vector3(spin[0], spin[1], spin[2]);
+  obj.userData.scaleIn   = !!opts.scaleIn;
+  obj.userData.label     = opts.label || null;
+  obj.userData.floatSeed = Math.random() * Math.PI * 2;
+  PARTS.push(obj);
+  return obj;
+}
+
+/* ---------- floor factory (navy glass) ---------- */
+const FLOOR_W = 3.15;
+const FLOOR_D = 3.15;
+
+function makeFloor(glassColor = 0x2c4a6e, slabColor = 0xe4e0d8, h = 0.78){
+  const g = new THREE.Group();
+
+  const glass = new THREE.Mesh(
+    new RoundedBoxGeometry(FLOOR_W, h, FLOOR_D, 3, 0.06),
+    matGlass(glassColor)
+  );
+  g.add(glass);
+
+  const slab = new THREE.Mesh(
+    new RoundedBoxGeometry(FLOOR_W + 0.14, 0.11, FLOOR_D + 0.14, 3, 0.045),
+    matConcrete(slabColor)
+  );
+  slab.position.y = h / 2 + 0.055;
+  g.add(slab);
+
+  const pillarMat = matConcrete(0xcfc9bd, 0.6);
+  const corners = [
+    [ FLOOR_W/2 - 0.06,  FLOOR_D/2 - 0.06],
+    [-FLOOR_W/2 + 0.06,  FLOOR_D/2 - 0.06],
+    [ FLOOR_W/2 - 0.06, -FLOOR_D/2 + 0.06],
+    [-FLOOR_W/2 + 0.06, -FLOOR_D/2 + 0.06]
+  ];
+  corners.forEach(([x, z]) => {
+    const pillar = new THREE.Mesh(
+      new THREE.BoxGeometry(0.10, h + 0.12, 0.10),
+      pillarMat
+    );
+    pillar.position.set(x, 0, z);
+    g.add(pillar);
+  });
+
+  return g;
+}
+
+/* ---------- 1. Parking base ---------- */
+const baseGroup = new THREE.Group();
+
+const baseSlab = new THREE.Mesh(
+  new RoundedBoxGeometry(FLOOR_W + 0.9, 0.42, FLOOR_D + 0.9, 3, 0.08),
+  matConcrete(0xd0cabd, 0.82)
+);
+baseSlab.position.y = 0.21;
+baseGroup.add(baseSlab);
+
+const entry = new THREE.Mesh(
+  new THREE.BoxGeometry(FLOOR_W + 0.6, 0.05, 0.7),
+  new THREE.MeshStandardMaterial({ color: 0x7c8ba0, metalness: 0.25, roughness: 0.7 })
+);
+entry.position.set(0, 0.44, FLOOR_D/2 + 0.12);
+baseGroup.add(entry);
+
+for (let i = -1; i <= 1; i++){
+  const stripe = new THREE.Mesh(
+    new THREE.BoxGeometry(0.05, 0.02, 0.5),
+    new THREE.MeshBasicMaterial({ color: 0xc89a3f })
+  );
+  stripe.position.set(i * 0.7, 0.42, FLOOR_D/2 + 0.05);
+  baseGroup.add(stripe);
+}
+
+building.add(baseGroup);
+register(baseGroup, [0, -1.4, 0.4], [0, 0.15, 0], { label: 'Parking' });
+
+/* ---------- 2. Lobby & Retail ---------- */
+const lobby = makeFloor(0x3d5f86, 0xe8e4dc, 0.92);
+lobby.position.y = 0.88;
+building.add(lobby);
+register(lobby, [-1.1, -0.35, -0.6], [0, -0.25, 0], { label: 'Lobby & Retail' });
+
+/* ---------- 3. Office Level 1 ---------- */
+const office1 = makeFloor(0x2c4a6e, 0xe4e0d8, 0.78);
+office1.position.y = 1.78;
+building.add(office1);
+register(office1, [1.2, 0.85, 0.5], [0, 0.3, 0], { label: 'Office Level 1' });
+
+/* ---------- 4. Office Level 2 ---------- */
+const office2 = makeFloor(0x2c4a6e, 0xe4e0d8, 0.78);
+office2.position.y = 2.68;
+building.add(office2);
+register(office2, [-1.3, 2.0, -0.5], [0, -0.3, 0], { label: 'Office Level 2' });
+
+/* ---------- 5. Executive Suite ---------- */
+const exec = makeFloor(0x1a3a5c, 0xebe6dc, 0.86);
+exec.position.y = 3.60;
+building.add(exec);
+register(exec, [1.25, 3.15, 0.55], [0, 0.35, 0], { label: 'Executive Suite' });
+
+/* ---------- 6. Rooftop Terrace ---------- */
+const roof = new THREE.Group();
+
+const roofSlab = new THREE.Mesh(
+  new RoundedBoxGeometry(FLOOR_W - 0.3, 0.14, FLOOR_D - 0.3, 3, 0.05),
+  matConcrete(0xd8d2c5, 0.75)
+);
+roof.add(roofSlab);
+
+for (let i = 0; i < 12; i++){
+  const a = (i / 12) * Math.PI * 2;
+  const px = Math.cos(a) * (FLOOR_W/2 - 0.22);
+  const pz = Math.sin(a) * (FLOOR_D/2 - 0.22);
+  const post = new THREE.Mesh(
+    new THREE.CylinderGeometry(0.018, 0.018, 0.24, 8),
+    matMetal(0x8a94a6, 0.85, 0.3)
+  );
+  post.position.set(px, 0.19, pz);
+  roof.add(post);
+}
+
+const railRing = new THREE.Mesh(
+  new THREE.TorusGeometry(FLOOR_W/2 - 0.22, 0.015, 6, 60),
+  matMetal(0x8a94a6, 0.85, 0.3)
+);
+railRing.rotation.x = Math.PI / 2;
+railRing.position.y = 0.30;
+roof.add(railRing);
+
+roof.position.y = 4.44;
+building.add(roof);
+register(roof, [0, 4.35, 0], [0, 0.5, 0], { label: 'Rooftop Terrace' });
+
+/* ---------- 7. Floating workspace items ---------- */
+
+function makeDesk(){
+  const g = new THREE.Group();
+  const top = new THREE.Mesh(
+    new RoundedBoxGeometry(1.15, 0.075, 0.62, 3, 0.025),
+    matConcrete(0xeae6dd, 0.55)
+  );
+  top.position.y = 0.34;
+  g.add(top);
+
+  const legMat = matMetal(0x8a94a6, 0.85, 0.3);
+  [[-0.5, -0.24], [0.5, -0.24], [-0.5, 0.24], [0.5, 0.24]].forEach(([x, z]) => {
+    const leg = new THREE.Mesh(
+      new THREE.CylinderGeometry(0.022, 0.022, 0.34, 8),
+      legMat
+    );
+    leg.position.set(x, 0.17, z);
+    g.add(leg);
+  });
+  return g;
+}
+const desk = makeDesk();
+desk.position.set(2.4, 0.4, 0.6);
+desk.rotation.y = -0.5;
+building.add(desk);
+register(desk, [3.4, 1.2, 1.6], [0.2, 1.2, 0.15], { scaleIn: true, label: 'Workspace' });
+
+function makeChair(){
+  const g = new THREE.Group();
+  const seat = new THREE.Mesh(
+    new RoundedBoxGeometry(0.5, 0.08, 0.5, 3, 0.03),
+    matAccent(0x1a3a5c)
+  );
+  seat.position.y = 0.42;
+  g.add(seat);
+
+  const back = new THREE.Mesh(
+    new RoundedBoxGeometry(0.5, 0.5, 0.07, 3, 0.03),
+    matAccent(0x1a3a5c)
+  );
+  back.position.set(0, 0.68, -0.22);
+  g.add(back);
+
+  const legMat = matMetal(0x9aa3b3, 0.85, 0.3);
+  [[-0.2, -0.2], [0.2, -0.2], [-0.2, 0.2], [0.2, 0.2]].forEach(([x, z]) => {
+    const leg = new THREE.Mesh(
+      new THREE.CylinderGeometry(0.018, 0.018, 0.4, 8),
+      legMat
+    );
+    leg.position.set(x, 0.2, z);
+    g.add(leg);
+  });
+  return g;
+}
+const chair = makeChair();
+chair.position.set(-2.4, 0.35, -0.5);
+chair.rotation.y = 0.7;
+building.add(chair);
+register(chair, [-3.6, 1.0, -1.5], [-0.2, -1.3, -0.15], { scaleIn: true, label: 'Ergonomic Seating' });
+
+function makeLaptop(){
+  const g = new THREE.Group();
+  const baseMat = matMetal(0xbfc6d1, 0.85, 0.28);
+  const screenMat = new THREE.MeshStandardMaterial({
+    color: 0x0f2942, emissive: 0x244a72, emissiveIntensity: 0.7,
+    metalness: 0.35, roughness: 0.2
+  });
+
+  const base = new THREE.Mesh(new RoundedBoxGeometry(0.62, 0.035, 0.44, 3, 0.015), baseMat);
+  g.add(base);
+
+  const lid = new THREE.Mesh(new RoundedBoxGeometry(0.62, 0.40, 0.028, 3, 0.015), screenMat);
+  lid.position.set(0, 0.20, -0.21);
+  lid.rotation.x = -0.12;
+  g.add(lid);
+
+  return g;
+}
+const laptop = makeLaptop();
+laptop.position.set(2.4, 0.78, 0.6);
+laptop.rotation.y = -0.5;
+building.add(laptop);
+register(laptop, [3.9, 0.9, -1.0], [0.1, 1.6, 0.2], { scaleIn: true, label: 'Modern Facilities' });
+
+function makePlant(){
+  const g = new THREE.Group();
+  const pot = new THREE.Mesh(
+    new THREE.CylinderGeometry(0.15, 0.12, 0.24, 18),
+    matConcrete(0xd4cec1, 0.7)
+  );
+  pot.position.y = 0.12;
+  g.add(pot);
+
+  const leafMat = new THREE.MeshStandardMaterial({ color: 0x2f6b4a, roughness: 0.6 });
+  for (let i = 0; i < 5; i++){
+    const a = (i / 5) * Math.PI * 2;
+    const leaf = new THREE.Mesh(
+      new THREE.SphereGeometry(0.16, 12, 10),
+      leafMat
+    );
+    leaf.position.set(Math.cos(a) * 0.12, 0.36 + (i % 2) * 0.10, Math.sin(a) * 0.12);
+    leaf.scale.set(0.8, 1.3, 0.8);
+    g.add(leaf);
+  }
+  return g;
+}
+const plant = makePlant();
+plant.position.set(-2.2, 0.35, 0.9);
+building.add(plant);
+register(plant, [-3.2, 0.8, 1.8], [0, 1.1, 0.15], { scaleIn: true, label: 'Luxurious Environment' });
+
+function makeWifiNode(){
+  const g = new THREE.Group();
+  const core = new THREE.Mesh(
+    new THREE.SphereGeometry(0.14, 20, 16),
+    new THREE.MeshStandardMaterial({
+      color: 0xc89a3f, emissive: 0xe0b05a, emissiveIntensity: 1.3,
+      metalness: 0.5, roughness: 0.25
+    })
+  );
+  g.add(core);
+
+  for (let i = 1; i <= 3; i++){
+    const ring = new THREE.Mesh(
+      new THREE.TorusGeometry(0.14 + i * 0.13, 0.010, 6, 40),
+      new THREE.MeshBasicMaterial({ color: 0xe0b05a, transparent: true, opacity: 0.55 - i * 0.14 })
+    );
+    ring.rotation.x = Math.PI / 2;
+    g.add(ring);
+  }
+  return g;
+}
+const wifi = makeWifiNode();
+wifi.position.set(0.4, 5.6, 0.2);
+building.add(wifi);
+register(wifi, [0.2, 1.4, -1.2], [0.3, 0.8, 0], { scaleIn: true, label: 'Wi-Fi Zone' });
+
+function makeCoffee(){
+  const g = new THREE.Group();
+  const cup = new THREE.Mesh(
+    new THREE.CylinderGeometry(0.13, 0.10, 0.22, 18, 1, true),
+    new THREE.MeshStandardMaterial({ color: 0xfaf7f0, roughness: 0.4, side: THREE.DoubleSide })
+  );
+  cup.position.y = 0.11;
+  g.add(cup);
+
+  const coffee = new THREE.Mesh(
+    new THREE.CircleGeometry(0.115, 18),
+    new THREE.MeshStandardMaterial({ color: 0x5a3418, roughness: 0.6 })
+  );
+  coffee.rotation.x = -Math.PI / 2;
+  coffee.position.y = 0.20;
+  g.add(coffee);
+
+  const handle = new THREE.Mesh(
+    new THREE.TorusGeometry(0.055, 0.014, 8, 20, Math.PI * 1.4),
+    new THREE.MeshStandardMaterial({ color: 0xfaf7f0, roughness: 0.4 })
+  );
+  handle.position.set(0.14, 0.11, 0);
+  handle.rotation.z = Math.PI / 2;
+  g.add(handle);
+  return g;
+}
+const coffee = makeCoffee();
+coffee.position.set(1.85, 0.82, 0.7);
+coffee.rotation.y = -0.5;
+building.add(coffee);
+register(coffee, [2.4, 0.5, 2.0], [0.1, 1.5, 0.2], { scaleIn: true, label: 'Café Corner' });
+
+/* ============================================================
+   5. SOFT SHADOW DISC — navy tint
+   ============================================================ */
+function makeShadowTexture(){
+  const c = document.createElement('canvas');
+  c.width = c.height = 256;
+  const ctx = c.getContext('2d');
+  const g = ctx.createRadialGradient(128, 128, 10, 128, 128, 128);
+  g.addColorStop(0, 'rgba(15,42,66,.28)');
+  g.addColorStop(0.5, 'rgba(15,42,66,.10)');
+  g.addColorStop(1, 'rgba(15,42,66,0)');
+  ctx.fillStyle = g;
+  ctx.fillRect(0, 0, 256, 256);
+  return new THREE.CanvasTexture(c);
+}
+
+const shadowDisc = new THREE.Mesh(
+  new THREE.PlaneGeometry(11, 11),
+  new THREE.MeshBasicMaterial({
+    map: makeShadowTexture(),
+    transparent: true,
+    depthWrite: false
+  })
+);
+shadowDisc.rotation.x = -Math.PI / 2;
+shadowDisc.position.y = -2.35;
+world.add(shadowDisc);
+
+/* ============================================================
+   6. STARFIELD — subtle navy dots
+   ============================================================ */
+const STAR_COUNT = 200;
+const starGeo = new THREE.BufferGeometry();
+const starPos = new Float32Array(STAR_COUNT * 3);
+for (let i = 0; i < STAR_COUNT; i++){
+  starPos[i * 3]     = (Math.random() - 0.5) * 50;
+  starPos[i * 3 + 1] = (Math.random() - 0.5) * 40;
+  starPos[i * 3 + 2] = (Math.random() - 0.5) * 40 - 10;
+}
+starGeo.setAttribute('position', new THREE.BufferAttribute(starPos, 3));
+const stars = new THREE.Points(starGeo, new THREE.PointsMaterial({
+  color: 0x244a72, size: 0.07, transparent: true, opacity: 0.5, depthWrite: false, sizeAttenuation: true
+}));
+scene.add(stars);
+
+/* ============================================================
+   7. LABELS
+   ============================================================ */
+const labelLayer = document.getElementById('labels');
+PARTS.forEach(obj => {
+  if (!obj.userData.label) return;
+  const el = document.createElement('div');
+  el.className = 'part-label';
+  el.textContent = obj.userData.label;
+  labelLayer.appendChild(el);
+  obj.userData.labelEl = el;
+});
+
+const _v = new THREE.Vector3();
+
+function updateLabels(){
+  const op = Math.min(1, Math.max(0, (progress - 0.32) / 0.34));
+  PARTS.forEach(obj => {
+    const el = obj.userData.labelEl;
+    if (!el) return;
+    el.style.opacity = op;
+    if (op <= 0.02) return;
+
+    obj.getWorldPosition(_v);
+    _v.project(camera);
+
+    const x = (_v.x * 0.5 + 0.5) * window.innerWidth;
+    const y = (-_v.y * 0.5 + 0.5) * window.innerHeight;
+
+    el.style.transform = `translate(-50%,-50%) translate(${x}px, ${y}px)`;
+  });
+}
+
+/* ============================================================
+   8. RESPONSIVE
+   ============================================================ */
+function resize(){
+  const w = window.innerWidth;
+  const h = window.innerHeight;
+  const aspect = w / h;
+  const isMobile = aspect < 0.95;
+
+  renderer.setSize(w, h, false);
+  camera.aspect = aspect;
+  camera.position.z = isMobile ? 22 : 15.5;
+  camera.position.y = isMobile ? 3.6 : 3.2;
+  camera.lookAt(0, 0.4, 0);
+  camera.updateProjectionMatrix();
+
+  world.position.x = isMobile ? 0 : 2.7;
+  world.scale.setScalar(isMobile ? 0.80 : 1);
+}
+window.addEventListener('resize', resize);
+resize();
+
+/* ============================================================
+   9. SCROLL → EXPLODE
+   ============================================================ */
+const heroWrap  = document.getElementById('heroWrap');
+const heroCopy  = document.getElementById('heroCopy');
+const scrollHint = document.getElementById('scrollHint');
+
+let heroScrollable = 1;
+let target   = 0;
+let progress = 1;
+
+function measure(){
+  heroScrollable = Math.max(1, heroWrap.offsetHeight - window.innerHeight);
+}
+window.addEventListener('resize', measure);
+measure();
+
+function onScroll(){
+  const top = heroWrap.getBoundingClientRect().top;
+  const scrolled = Math.min(Math.max(-top, 0), heroScrollable);
+  target = scrolled / heroScrollable;
+
+  const fade = Math.min(1, Math.max(0, 1 - target * 1.9));
+  heroCopy.style.opacity = fade;
+  heroCopy.style.transform = `translateY(${target * -70}px)`;
+  heroCopy.style.pointerEvents = fade < 0.25 ? 'none' : 'auto';
+
+  scrollHint.style.opacity = Math.max(0, 1 - target * 4);
+}
+window.addEventListener('scroll', onScroll, { passive: true });
+onScroll();
+
+/* ============================================================
+   10. MOUSE PARALLAX
+   ============================================================ */
+let mx = 0, my = 0, smx = 0, smy = 0;
+window.addEventListener('pointermove', e => {
+  mx = (e.clientX / window.innerWidth  - 0.5) * 2;
+  my = (e.clientY / window.innerHeight - 0.5) * 2;
+}, { passive: true });
+
+/* ============================================================
+   11. ANIMATION LOOP
+   ============================================================ */
+const clock = new THREE.Clock();
+const easeInOut = t => t < 0.5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2;
+const clamp01 = v => Math.min(1, Math.max(0, v));
+
+function animate(){
+  requestAnimationFrame(animate);
+
+  const dt = Math.min(clock.getDelta(), 0.05);
+  const t  = clock.elapsedTime;
+
+  progress += (target - progress) * Math.min(1, dt * 3.4);
+
+  smx += (mx - smx) * 0.055;
+  smy += (my - smy) * 0.055;
+
+  const e = easeInOut(clamp01(progress));
+
+  PARTS.forEach(obj => {
+    const u = obj.userData;
+
+    obj.position.set(
+      u.base.x + u.offset.x * e,
+      u.base.y + u.offset.y * e + Math.sin(t * 1.1 + u.floatSeed) * 0.09 * e,
+      u.base.z + u.offset.z * e
+    );
+
+    obj.rotation.set(
+      u.baseRot.x + u.spin.x * e,
+      u.baseRot.y + u.spin.y * e + Math.sin(t * 0.5 + u.floatSeed) * 0.10 * e,
+      u.baseRot.z + u.spin.z * e
+    );
+
+    if (u.scaleIn){
+      const s  = clamp01((progress - 0.04) / 0.38);
+      const es = s * s * (3 - 2 * s);
+      obj.scale.setScalar(u.baseScale * es);
+      obj.visible = es > 0.001;
+    }
+  });
+
+  building.rotation.y = Math.sin(t * 0.30) * 0.15 + smx * 0.30;
+  building.rotation.x = Math.sin(t * 0.45) * 0.035 - smy * 0.10;
+
+  world.position.y = Math.sin(t * 0.7) * 0.06;
+  world.rotation.y = smx * 0.08;
+
+  stars.rotation.y = t * 0.014;
+  stars.rotation.x = Math.sin(t * 0.1) * 0.04;
+
+  warmLight.position.x = Math.sin(t * 0.5) * 8;
+  warmLight.position.y = 4 + Math.cos(t * 0.4) * 3;
+
+  renderer.render(scene, camera);
+  updateLabels();
+}
+animate();
+
+/* ============================================================
+   12. PAGE INTERACTIONS
+   ============================================================ */
+document.getElementById('year').textContent = new Date().getFullYear();
+
+const track = document.getElementById('marqueeTrack');
+track.innerHTML += track.innerHTML;
+
+document.getElementById('shareBtn')?.addEventListener('click', async () => {
+  const data = {
+    title: 'Business Hub Faisalabad — Business Center',
+    text: 'Modern business center on Sargodha Rd, Muslim Town 2, Faisalabad. Rated 4.7 ★ (28 reviews).',
+    url: location.href
+  };
+  try {
+    if (navigator.share) await navigator.share(data);
+    else {
+      await navigator.clipboard.writeText(location.href);
+      alert('Link copied to clipboard!');
+    }
+  } catch (err) { /* cancelled */ }
+});
+
+const revealEls = document.querySelectorAll('.reveal');
+const io = new IntersectionObserver((entries) => {
+  entries.forEach((entry, i) => {
+    if (entry.isIntersecting){
+      setTimeout(() => entry.target.classList.add('in'), i * 70);
+      io.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.12, rootMargin: '0px 0px -60px 0px' });
+revealEls.forEach(el => io.observe(el));
+
+const barsIO = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting){
+      entry.target.querySelectorAll('.bar-fill').forEach((bar, i) => {
+        setTimeout(() => { bar.style.width = bar.dataset.w; }, i * 110);
+      });
+      barsIO.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.3 });
+document.querySelectorAll('.rev-summary').forEach(el => barsIO.observe(el));
+
+document.querySelectorAll('.card').forEach(card => {
+  card.addEventListener('pointermove', e => {
+    const r = card.getBoundingClientRect();
+    card.style.setProperty('--mx', `${e.clientX - r.left}px`);
+    card.style.setProperty('--my', `${e.clientY - r.top}px`);
+  });
+});
+
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+  a.addEventListener('click', e => {
+    const id = a.getAttribute('href');
+    if (id.length < 2) return;
+    const el = document.querySelector(id);
+    if (!el) return;
+    e.preventDefault();
+    const y = el.getBoundingClientRect().top + window.scrollY - 70;
+    window.scrollTo({ top: y, behavior: 'smooth' });
+  });
+});
+</script>
+</body>
+</html>
